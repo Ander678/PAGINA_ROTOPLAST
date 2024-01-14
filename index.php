@@ -65,6 +65,27 @@
             </li>
         </ul>
     </nav>
+    <section class="hero">
+        <div class="heroInfo">
+            <h1>DIECAM INVERSIONES S.A.C</h1>
+            <h3>DIECAM INVERSIONES S.A.C.
+                Distribuidor autorizado y especializado de Rotoplas.
+
+                Comercialización de todos sus productos a nivel nacional
+
+                ¡Conoce los beneficios y promociones que tenemos para ti!</h3>
+            <a href="#" class="btnComprar">COMPRAR</a>
+        </div>
+    </section>
+    <section class="info">
+        <div class="containerImg">
+            <img src="imgs/img1.png" alt="">
+        </div>
+        <div class="containerInfoText">
+            <h2>Quiénes somos</h2>
+            <p>Somos una empresa reconocida y certificada por Rotoplas como Distribuidor Especializado para la comercialización y distribución de diferentes líneas a nivel nacional; estamos enfocados en contribuir con soluciones y alternativas no convencionales a los problemas del agua y saneamiento con productos de excelente calidad y de altos beneficios. Contamos con amplia variedad de productos, capacidades y modelos. Nos enfocamos en dar una asesoría personalizada pre y post venta para cualquier solución que el usuario necesite.</p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

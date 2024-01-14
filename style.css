@@ -55,6 +55,7 @@ header.open{
 
 .sidebar.open{
   width: 20vh;
+  z-index: 333;
 }
 
 .profile{
@@ -106,4 +107,33 @@ li:hover a{
 li:hover a i{
   color: var(--hoverClr2);
   transition: 0.3s;
+}
+
+/*HERO*/
+.hero{
+  
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 100px;
+}
+.heroInfo{
+  height: 50vh;
+}
+.info{
+  width: auto;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 100px;
+}
+.containerImg{
+  width: 50vh;
+}
+
+.containerInfoText{
+  width: 50vh;
 }
