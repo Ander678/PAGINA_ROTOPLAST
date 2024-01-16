@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="inicio-img">
-                <img src="" alt="">
+                <img src="assets/img1.png" alt="">
             </div>
         </section>
     </main>

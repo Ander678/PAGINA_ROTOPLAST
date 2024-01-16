@@ -10,7 +10,6 @@
 :root{
     --color-primario:#1877f2;
     --color-secundario:#0a1f4a;
-    --color-terciario:#1877f2;
     --color-texto-primario:#20b6e8;
     --color-texto-secundario:#156796;
     --color-negro-bajo:#212226;
@@ -71,6 +70,7 @@ header{
     cursor: pointer;
     display: none;
 }
+/*I N I C I O*/
 section{
     padding: 60px 14%;
 
@@ -78,9 +78,35 @@ section{
 .inicio{
     width: 100%;
     height: 100vh;
-    background-color: var(--color-primario);
+    background-color: var(--color-texto-primario);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 6rem;
+}
+.inicio-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.inicio-img img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    padding-top: 25px;
+    animation-name: slide;
+    animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
 }
