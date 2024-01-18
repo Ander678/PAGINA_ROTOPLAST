@@ -1,12 +1,12 @@
 *{
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
 }
 :root{
     --color-primario:#1877f2;
@@ -16,6 +16,17 @@
     --color-texto-secundario:#156796;
     --color-negro-bajo:#212226;
     --color-plomo-claro:#666666;
+}
+/* srcroll */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+} 
+html::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+html::-webkit-scrollbar-track{
+    background: var(--text-color);
+    border-radius: 5rem;
 }
 section{
     padding: 50px 100px;
@@ -32,5 +43,91 @@ header{
     justify-content: space-between;
     padding: 20px 100px;
     transition: 0.5s;
-    background: #1877f2;
+}
+.logo img{
+    width: 3rem;
+}
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bf-color);
+}
+.navbar a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--bf-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s;
+}
+.navbar a:hover::after,
+.navbar .home-active::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size:24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.container{
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/*S W I P P E R*/
+.swiper-pagination-flecha{
+    padding: 5px;
+}
+.swiper-pagination-flecha-active{
+    background: var(--bf-color) !important;
+}
+.home-text{
+    position: relative;
+    z-index: 10002;
+    padding: 0 100px;
+    margin-top: 150px;
+}
+.home-text span{
+    color: var(--bf-color);
+    font-weight: 400;
+}
+.home-text h1,h3{
+    color: var(--bf-color);
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.home-text h2{
+    margin-bottom: 50px;
+    color: var(--bf-color);
+    font-weight: 500;
+}
+.btnHome{
+    padding: 0.7rem 1rem;
+    background: var(--text-color);
+    color: var(--bf-color);
+    font-weight: 500;
+    border-radius: 5px;
+}
+.btnHome:hover{
+    background:#051027;
 }
