@@ -78,10 +78,23 @@
             <div class="swiper-pagination"></div>
         </section>
         <section>
-            <div>
 
-            </div>
         </section>
+        <section id="Somos">
+    <div class="Imagen">
+    <h1>Quiénes somos</h1>
+    <img src="img/img1.png" alt="Foto de la empresa" />
+    </div>
+    <div class="texto">
+    <p>
+      Diecam, Inversiones S.A.C. es una empresa reconocida y certificada por Rotoplas como Distribuidor Especializado para la comercialización y distribución de diferentes líneas a nivel nacional.
+
+      Estamos enfocados en contribuir con soluciones y alternativas no convencionales a los problemas del agua y saneamiento, con productos de excelente calidad y de altos beneficios.
+   
+      Contamos con amplia variedad de productos, capacidades y modelos. Nos enfocamos en dar una asesoría personalizada pre y post venta para cualquier solución que el usuario necesite.
+    </p>
+    </div>
+    </section>
     </main>
     <footer class="pie-pagina">
    <div class="group-1">

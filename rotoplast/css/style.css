@@ -131,6 +131,39 @@ header{
 .btnHome:hover{
     background:#051027;
 }
+/*Quienes somos*/
+
+section#Somos {
+    display: flex;
+    padding: 5rem;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    
+  }
+  
+  section#Somos h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  section#Somos p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  section#Somos img {
+    width: 559px;
+    height: 746px;
+  }
+  
+  section#Somos > * {
+    flex: 1;
+  }
+  
+  .texto {
+        
+    text-align: right;
+  }
 
 /*FOOTER*/
 
