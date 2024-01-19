@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide container">
-                    <img src="img/fondo2.jpg" alt="">
+                    <img src="img/fondoPrincipal.jpg" alt="">
                     <div class="home-text">
                         <span>COMIENZA YA!</span>
                         <h3>DIECAM INVERSIONES S.A.C</h3>
@@ -78,14 +78,14 @@
             <div class="swiper-pagination"></div>
         </section>
         <section>
+        <div>
 
+        </div>
         </section>
         <section id="Somos">
-    <div class="Imagen">
+        <div class="texto">
     <h1>Quiénes somos</h1>
-    <img src="img/img1.png" alt="Foto de la empresa" />
-    </div>
-    <div class="texto">
+    <br>
     <p>
       Diecam, Inversiones S.A.C. es una empresa reconocida y certificada por Rotoplas como Distribuidor Especializado para la comercialización y distribución de diferentes líneas a nivel nacional.
 
@@ -93,6 +93,9 @@
    
       Contamos con amplia variedad de productos, capacidades y modelos. Nos enfocamos en dar una asesoría personalizada pre y post venta para cualquier solución que el usuario necesite.
     </p>
+    </div>
+    <div class="Imagen">
+    <img src="img/fondoPrincipal.jpg" alt="Foto de la empresa" />
     </div>
     </section>
     </main>
