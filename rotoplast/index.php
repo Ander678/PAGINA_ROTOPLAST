@@ -77,9 +77,38 @@
             <div class="swiper-button-prev"></div>-->
             <div class="swiper-pagination"></div>
         </section>
-    </main>
-    <footer>
+        <section>
+            <div>
 
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+   <div class="group-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/Logo.png" alt="Logo">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>asadawda</p>
+            <p>adasdw</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-whatsapp' ></i>
+            </div>
+        </div>
+   </div>
+   <div class="group-2">
+    <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
+   </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swip.js"></script>
