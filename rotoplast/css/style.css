@@ -253,51 +253,6 @@ header{
 .populares-container .box .btn:hover{
     background: var(--text-color);
 }
-/*Quienes somos*/
-
-section#Somos {
-    display: flex;
-  flex-wrap: wrap;
-    padding: 5rem;
-    background-color: #ffffff;
-    
-  }
-  
-  section#Somos h1 {
-    font-size: 44px;
-    font-weight: bold;
-  }
-  
-  section#Somos p {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .Imagen {
-    align-items: center;
-
-  }
-  
-  section#Somos img {
-   display: flex ;
-  flex-wrap: wrap;
-  width: 700px;
-  height: 400px;
-  }
-  
-  section#Somos > * {
-    flex: 1;
-  }
-  
-  .texto {
-        
-  display: flex;
-  flex-wrap: wrap;
-  width: 1000px;
-  padding: 20px;
-  
-
-  }
-  
 
 /*FOOTER*/
 
