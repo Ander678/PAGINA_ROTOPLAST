@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIECAM</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/diecam-logotipo-175w.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -32,7 +33,9 @@
         <section class="home" id="home">
             <div class="text">
                 <h1><span>DIECAM</span> INVERSIONES S.A.C</h1>
-                <p>Distribuidor autorizado y especializado de Rotoplas. Comercialización de todos sus productos a nivel nacional</p>
+                <p>Distribuidor autorizado y especializado de Rotoplas. Comercialización de todos sus productos a nivel nacional.
+                    ¡Conoce los beneficios y promociones que tenemos para ti!
+                </p>
                 <div class="btn-home">
                     <a href="">COMPRAR</a>
                 </div>
@@ -139,8 +142,8 @@
                 </div>
                 <div class="box">
                     <i class='bx bxs-timer'></i>
-                    <h3>Entrega inmediata</h3>
-                    <p>Compra online nuestros productos y te garantizamos que lleguen rápidamente.</p>
+                    <h3>Despacho en 24hs</h3>
+                    <p>El plazo de entrega será de 24 horas siguientes a la confirmación de tu pedido.</p>
                 </div>
             </div>
         </section>
