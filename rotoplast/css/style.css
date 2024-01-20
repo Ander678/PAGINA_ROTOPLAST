@@ -44,7 +44,7 @@ header{
     padding: 15px 100px;
 }
 .logo img{
-    width: 180px;
+    width: 70px;
 }
 .navbar{
     display: flex;
@@ -95,7 +95,7 @@ header{
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: url(img/lavado00.jpg);
+    background-image: url(../img/lavado00.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
@@ -218,6 +218,18 @@ header{
     padding: 10px;
     border-radius: 1rem;
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    /*animation: pulsar 3s infinite;*/
+}
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 8px var(--color-texto-primario);
+    }
+    50% {
+        box-shadow: 0 0 17px var(--text-color);
+    }
+    100% {
+        box-shadow: 0 0 8px var(--color-texto-primario);
+    }
 }
 .populares-container .box .box-img{
     width: 100%;
@@ -245,17 +257,143 @@ header{
 .populares-container .box .btn{
     display: flex;
     justify-content: center;
-    background: #156796;
+    background:var(--text-color);
     color: #fff;
     padding: 10px;
     border-radius: 0.5rem;
+    transition: 0.3s;
 }
 .populares-container .box .btn:hover{
+    background: var(--color-primario);
+}
+.nosotros-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.nosotros-img{
+    margin: auto;
+}
+.nosotros-img img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.nosotros-text span{
+    font-weight: 500;
+    font-size: 8vh;
+    color: var(--text-color);
+}
+.nosotros-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+
+
+/*ofrecemos*/
+
+.ofrecemos-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.ofrecemos-img{
+    margin: auto;
+}
+.ofrecemos-img img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.ofrecemos-text span{
+    font-weight: 500;
+    font-size: 8vh;
+    color: var(--text-color);
+}
+.ofrecemos-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+
+
+/*mapaaaaaaa*/
+#encuentranos{
+    text-align: center;
+}
+#encuentranos h2{
+    font-size: 2rem;
+    color: var(--color-secundario);
+    padding: 40px 0;
+}
+#encuentranos gmp-map {
+    height: 50vh;
+}
+#encuentranos iframe{
+    border-radius: 1rem;
+}
+
+/*foooooter*/
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    height: 100%;
+    width: 100%;
     background: var(--text-color);
 }
 
-/*FOOTER*/
+#footer h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+#footer .socials, .ubicacion, .horario{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+}
+#footer .socials{
+    text-align: start;
+}
+#footer img{
+    filter: invert(100%);
+    width: 40px;
+    height: auto;
+    margin: 0 10px 10px 0;
+}
 
+#footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+#footer .libro-reclamaciones-logo img{
+    width: 200px;
+    height: auto;
+}
+
+.libro-reclamaciones-logo{
+    margin: 0px 50px;
+}
+
+.group-2{
+    width: 100%;
+    background: var(--gradient);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.group-2 small{
+    font-size: 15px;
+}
+/*
 .pie-pagina{
     width: 100%;
     background-color: var(--color-texto-secundario);
@@ -304,13 +442,13 @@ header{
 .pie-pagina .group-1 .red-social a:hover{
     color: aqua;
 }
-.pie-pagina .group-2{
+footer .group-2{
     background-color: #0a1f4a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .group-2 small{
+footer .group-2 small{
     font-size: 15px;
 }
 @media screen and (max-wifth:800px) {
@@ -321,5 +459,5 @@ header{
         padding: 35px 0px;
     }
 }
-
+*/
     

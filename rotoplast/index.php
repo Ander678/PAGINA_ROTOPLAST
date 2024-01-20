@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <a href="" class="logo"><img src="img/Nuevo_Lienzo_-_2.png" alt=""></a>
+        <a href="" class="logo"><img src="img/Nuevo_Lienzo_5.png" alt=""></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="#incio">INCIO</a></li>
@@ -68,7 +68,7 @@
                         <img src="img/Lavado-de-tinaco.png" alt="">
                     </div>
                     <h4>Rotoplas 660L</h4>
-                    <a href="" class="btn">Consultar precio YA!</a>
+                    <a href="" class="btn">COTIZA AHORA!</a>
                 </div>
 
                 <div class="box">
@@ -76,7 +76,7 @@
                         <img src="img/Lavado-de-tinaco.png" alt="">
                     </div>
                     <h4>Rotoplas 660L</h4>
-                    <a href="" class="btn">Consultar precio YA!</a>
+                    <a href="" class="btn">COTIZA AHORA!</a>
                 </div>
 
                 <div class="box">
@@ -84,7 +84,38 @@
                         <img src="img/Lavado-de-tinaco.png" alt="">
                     </div>
                     <h4>Rotoplas 660L</h4>
-                    <a href="" class="btn">Consultar precio YA!</a>
+                    <a href="" class="btn">COTIZA AHORA!</a>
+                </div>
+            </div>
+        </section>
+
+        <!--quienes carajos somooooooooooooooooss cueeeeck-->
+
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-container">
+                <div class="nosotros-img">
+                    <img src="img/img1.png" alt="">
+                </div>
+                <div class="nosotros-text">
+                    <span>Sobre nosotros</span>
+                    <p>Somos una empresa reconocida y certificada por Rotoplas como Distribuidor Especializado para la comercialización y
+                        distribución de diferentes líneas a nivel nacional; estamos enfocados en contribuir con soluciones y alternativas no convencionales a
+                        los problemas del agua y saneamiento con productos de excelente calidad y de altos beneficios. Contamos con amplia variedad de productos,
+                        capacidades y modelos. Nos enfocamos en dar una asesoría personalizada pre y post venta para cualquier solución que el usuario necesite.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--que ofrecemos ctmr-->
+        <section class="ofrecemos" id="ofrecemos">
+            <div class="ofrecemos-container">
+                <div class="ofrecemos-text">
+                    <span>Qué ofrecemos</span>
+                    <p>En Rotoplas tenemos la solución necesaria para el almacenamiento, trasporte y conducción de agua, alimentos y sustancias químicas.
+                        Contamos con la mejor calidad y beneficios del mercado, con amplia variedad de capacidades.</p>
+                </div>
+                <div class="ofrecemos-img">
+                    <img src="img/img1.png" alt="">
                 </div>
             </div>
         </section>
@@ -114,7 +145,33 @@
             </div>
         </section>
     </main>
-    <footer class="pie-pagina">
+    <section id="encuentranos">
+        <h2>Aquí estamos <span><i class='bx bx-been-here'></i></span> </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.4793694298891!2d-76.92453366751127!3d-12.191631018771675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9bd729aa78f%3A0x8d814a697c22e705!2sDiecam%20Inversiones%20SAC!5e0!3m2!1ses-419!2spe!4v1705709056276!5m2!1ses-419!2spe" width="100%" height="400vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    <footer id="footer">
+        <div class="socials">
+            <h4>CONTACTANOS</h4>
+            <a href="https://www.facebook.com/profile.php?id=100078193081516"><img src="img/ico_fb.png" alt="">DIECAM</a>
+            <a href=""><img src="img/ico_wssp.png" alt="">+51 999 999 999</a>
+        </div>
+        <div class="ubicacion">
+            <h4>UBICANOS</h4>
+            <a href="https://maps.app.goo.gl/ZWHRixfnjfQ9p83x9" target="_blank"><img src="img/ubi.png" alt="">Av. La Mariscala 727, Lima 15818, Perú</a>
+            <br>
+            <br>
+        </div>
+        <div class="horario">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <a href=""><img src="img/reloj.png" alt="">Lunes - Sábado 9am - 6pm</a>
+            <br><br>
+        </div>
+    </footer>
+    <div class="group-2">
+        <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
+    </div>
+    <!--<footer class="pie-pagina">
         <div class="group-1">
             <div class="box">
                 <figure>
@@ -140,7 +197,7 @@
         <div class="group-2">
             <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
         </div>
-    </footer>
+    </footer>-->
     <script src="main.js"></script>
 </body>
 
