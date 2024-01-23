@@ -68,25 +68,25 @@
             <div class="populares-container">
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/Lavado-de-tinaco.png" alt="">
+                        <img src="img/10000l.jpg" alt="">
                     </div>
-                    <h4>Rotoplas 660L</h4>
+                    <h4>CISTERNA 10,000 LTS.</h4>
                     <a href="" class="btn">COTIZA AHORA!</a>
                 </div>
 
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/Lavado-de-tinaco.png" alt="">
+                        <img src="img/1300l.png" alt="">
                     </div>
-                    <h4>Rotoplas 660L</h4>
+                    <h4>BIODIGESTOR 1,300 LTS.</h4>
                     <a href="" class="btn">COTIZA AHORA!</a>
                 </div>
 
                 <div class="box">
                     <div class="box-img">
-                        <img src="img/Lavado-de-tinaco.png" alt="">
+                        <img src="img/750ml.jpg" alt="">
                     </div>
-                    <h4>Rotoplas 660L</h4>
+                    <h4>MEJOR AGUA GARANTIA DE POR VIDA 750 LTS. ARENA</h4>
                     <a href="" class="btn">COTIZA AHORA!</a>
                 </div>
             </div>
@@ -95,11 +95,11 @@
         <!--quienes carajos somooooooooooooooooss cueeeeck-->
 
         <section class="nosotros" id="nosotros">
-            <div class="nosotros-container">
+            <div class="nosotros-container show">
                 <div class="nosotros-img">
-                    <img src="img/img1.png" alt="">
+                    <img src="img/nosotros.jpg" alt="">
                 </div>
-                <div class="nosotros-text">
+                <div class="nosotros-text show">
                     <span>Sobre nosotros</span>
                     <p>Somos una empresa reconocida y certificada por Rotoplas como Distribuidor Especializado para la comercialización y
                         distribución de diferentes líneas a nivel nacional; estamos enfocados en contribuir con soluciones y alternativas no convencionales a
@@ -111,14 +111,14 @@
 
         <!--que ofrecemos ctmr-->
         <section class="ofrecemos" id="ofrecemos">
-            <div class="ofrecemos-container">
+            <div class="ofrecemos-container show">
                 <div class="ofrecemos-text">
                     <span>Qué ofrecemos</span>
                     <p>En Rotoplas tenemos la solución necesaria para el almacenamiento, trasporte y conducción de agua, alimentos y sustancias químicas.
                         Contamos con la mejor calidad y beneficios del mercado, con amplia variedad de capacidades.</p>
                 </div>
                 <div class="ofrecemos-img">
-                    <img src="img/img1.png" alt="">
+                    <img src="img/almacen.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -167,41 +167,16 @@
         </div>
         <div class="horario">
             <h4>HORARIOS DE ATENCIÓN</h4>
-            <a href=""><img src="img/reloj.png" alt="">Lunes - Sábado 9am - 6pm</a>
+            <a href=""><img src="img/reloj.png" alt="">Lunes - Sábado 8am - 8pm</a>
             <br><br>
         </div>
     </footer>
     <div class="group-2">
         <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
     </div>
-    <!--<footer class="pie-pagina">
-        <div class="group-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="img/Logo.png" alt="Logo">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>asadawda</p>
-                <p>adasdw</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <i class='bx bxl-facebook'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-whatsapp'></i>
-                </div>
-            </div>
-        </div>
-        <div class="group-2">
-            <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
-        </div>
-    </footer>-->
-    <script src="main.js"></script>
+    <script src="js/animacion.js"></script>
+    <script src="js/animacion2.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
