@@ -289,7 +289,7 @@ header{
 }
 .nosotros-img{
     margin: auto;
-    margin: 0px 25px;
+    margin: 0px 5px;
     
 }
 .nosotros-container:nth-of-type(even){
@@ -311,9 +311,8 @@ header{
     color: var(--text-color);
 }
 .nosotros-text{
-    width: 800px;
+    width: 600px;
     height: auto;
-    margin: 0 5px;
 }
 .nosotros-text p{
     margin: 0.5rem 0 1.4rem;
@@ -341,7 +340,7 @@ header{
 
 .ofrecemos-img{
     margin: auto;
-    margin: 0px 25px;
+    margin: 0px 5px;
 }
 .ofrecemos-container:nth-of-type(even){
     transform: translateX(-400%);
@@ -362,9 +361,8 @@ header{
     color: var(--text-color);
 }
 .ofrecemos-text{
-    width: 800px;
+    width: 600px;
     height: auto;
-    margin: 0 5px;
 }
 .ofrecemos-text p{
     margin: 0.5rem 0 1.4rem;
