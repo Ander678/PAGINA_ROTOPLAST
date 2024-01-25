@@ -25,8 +25,8 @@
             <li><a href="#contactenos">CONTÁCTENOS</a></li>
         </ul>
         <div class="header-btn">
-            <a href="" class="registrarse">Registrarse</a>
-            <a href="" class="ingresar">Ingresar</a>
+            <a href="siginup.php" class="registrarse">Registrarse</a>
+            <a href="login.php" class="ingresar">Ingresar</a>
         </div>
     </header>
     <main>
