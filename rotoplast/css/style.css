@@ -508,4 +508,71 @@ header{
     .navbar a::after{
         display: none;
     }
+    .nosotros-container, 
+    .ofrecemos-container{
+        width: 100%;
+        max-width: 100%;
+        padding: 20%;
+    }
+    .nosotros-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nosotros-img{
+        margin: 0 auto;
+    }
+    .nosotros-text{
+        width: 100%;
+        max-width: 100%;
+    }
+    .ofrecemos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ofrecemos-img {
+        margin: 0 auto;
+    }
+    .ofrecemos-text {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px ){
+
+    section {
+        padding: 30px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        position: static;
+        background: #fff;
+        box-shadow: none;
+        text-align: center;
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar a {
+        border: none;
+        border-bottom: 1px solid var(--text-color);
+    }
+    .navbar a::after {
+        display: none;
+    }
 }
