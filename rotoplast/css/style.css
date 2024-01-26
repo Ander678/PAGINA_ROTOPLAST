@@ -47,7 +47,7 @@ header{
     padding: 15px 100px;
 }
 .logo img{
-    width: 70px;
+    width: 120px;
 }
 .navbar{
     display: flex;
@@ -98,7 +98,7 @@ header{
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: url(../img/lavado002.jpg);
+    background-image: url(../img/zyro-image.png);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
