@@ -78,3 +78,19 @@ header{
 .header-btn .ingresar:hover{
     background: var(--color-primario);
 }
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../img/water_bkgr1.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text h1{
+    text-align: center;
+    margin-top: 1rem;
+}
