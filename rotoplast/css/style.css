@@ -74,6 +74,25 @@ header{
 .navbar a:hover::after{
     width: 100%;
 }
+.menu-vertical{
+    position: absolute;
+    display: none;
+    width: 122px;
+    height: auto;
+    background: #eeeff1;
+    /*box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 8px 8px;*/
+}
+.menu-vertical a{
+    font-size: 0.8rem;
+    padding: 10px 5px;
+    color: var(--color-negro-bajo);
+    font-weight: 500;
+    
+}
+.navbar li:hover .menu-vertical{
+    display: block;
+}
 #menu-icon{
     font-size: 24px;
     cursor: pointer;
@@ -84,15 +103,6 @@ header{
     padding: 10px 20px;
     color: var(--color-negro-bajo);
     font-weight: 500;
-}
-.header-btn .ingresar{
-    background: var(--color-texto-secundario);
-    color: #fff;
-    border-radius: 0.5rem;
-    transition: 0.3s;
-}
-.header-btn .ingresar:hover{
-    background: var(--color-primario);
 }
 .home{
     width: 100%;
@@ -184,6 +194,9 @@ header{
 }
 .heading h2{
     font-size: 2rem;
+}
+.beneficios .heading{
+    margin-top: 5rem;
 }
 .beneficios-container{
     display: grid;
