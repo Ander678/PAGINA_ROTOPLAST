@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Tienda</title>
+
+	<link rel="stylesheet" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+	<script src="js/productos.js"></script>
+</head>
+<body>
+
+	<header>
+        <a href="" class="logo"><img src="img/SAL.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">INCIO</a></li>
+            <li><a href="#linea-hogar">LÍNEA HOGAR</a></li>
+            <li><a href="#agroindustria">AGROINDUSTRIA</a></li>
+            <li><a href="#tienda">TIENDA</a></li>
+            <li><a href="#contactenos">CONTÁCTENOS</a></li>
+        </ul>
+    </header>
+	 
+    <section></section>
+    <section id="seccion-video-imagen">
+        <div class="promo">
+            <h2>Distribuidor autorizado y especializado de Rotoplas.</h2>
+            <p>¡Conoce los beneficios y promociones que tenemos para ti!</p>
+            <button type="button">CONSULTE AQUI</button>
+        </div>
+          <video muted autoplay loop>
+            <source src="img/agua.mp4" type="video/mp4">
+          </video>
+          <div class="capa"></div>
+        
+      </section>
+
+    
+    <section id="seccion-filtro-productos">
+        <h2>Filtro de Productos</h2>
+        
+        <label for="filtro">Buscar Producto:</label>
+        <input type="text" id="filtro" oninput="filtrarProductos()">
+        <button onclick="filtrarPorCategoria('categoria1')">Filtrar Categoría 1</button>
+        <button onclick="filtrarPorCategoria('categoria2')">Filtrar Categoría 2</button>
+        <button onclick="filtrarPorCategoria('categoria3')">Filtrar Categoría 3</button>
+        <button onclick="filtrarPorCategoria('categoria4')">Filtrar Categoría 4</button>
+        <button onclick="filtrarPorCategoria('categoria5')">Filtrar Categoría 5</button>
+        <button onclick="filtrarPorCategoria('categoria6')">Filtrar Categoría 6</button>
+        <button onclick="filtrarPorCategoria('categoria7')">Filtrar Categoría 7</button>
+        <button onclick="filtrarPorCategoria('categoria8')">Filtrar Categoría 8</button>
+        <button onclick="filtrarPorCategoria('categoria9')">Filtrar Categoría 9</button>
+        <button onclick="filtrarPorCategoria('categoria10')">Filtrar Categoría 10</button>
+        
+        <div id="productos-container">
+           
+            <div class="producto" data-nombre="Producto 1" category="categoria1"><img src="img/10000l.jpg" alt="Producto 1"></div>
+            <div class="producto" data-nombre="Producto 2" category="categoria2"><img src="img/10000l.jpg" alt="Producto 2"></div>
+            <div class="producto" data-nombre="Producto 3" category="categoria3"><img src="img/10000l.jpg" alt="Producto 1"></div>
+            <div class="producto" data-nombre="Producto 4" category="categoria4"><img src="img/10000l.jpg" alt="Producto 2"></div>
+            <div class="producto" data-nombre="Producto 5" category="categoria5"><img src="img/10000l.jpg" alt="Producto 1"></div>
+            <div class="producto" data-nombre="Producto 6" category="categoria6"><img src="img/10000l.jpg" alt="Producto 2"></div>
+            <div class="producto" data-nombre="Producto 7" category="categoria7"><img src="img/10000l.jpg" alt="Producto 1"></div>
+            <div class="producto" data-nombre="Producto 8" category="categoria8"><img src="img/10000l.jpg" alt="Producto 2"></div>
+            <div class="producto" data-nombre="Producto 9" category="categoria9"><img src="img/10000l.jpg" alt="Producto 1"></div>
+            <div class="producto" data-nombre="Producto 10" category="categoria10"><img src="img/10000l.jpg" alt="Producto 2"></div>
+           
+        </div>
+    </section>
+		
+	<footer id="footer">
+        <div class="socials">
+            <h4>CONTACTANOS</h4>
+            <a href="https://www.facebook.com/profile.php?id=100078193081516"><img src="img/ico_fb.png" alt="">DIECAM</a>
+            <a href=""><img src="img/ico_wssp.png" alt="">+51 999 999 999</a>
+        </div>
+        <div class="ubicacion">
+            <h4>UBICANOS</h4>
+            <a href="https://maps.app.goo.gl/ZWHRixfnjfQ9p83x9" target="_blank"><img src="img/ubi.png" alt="">Av. La Mariscala 727, Lima 15818, Perú</a>
+            <br>
+            <br>
+        </div>
+        <div class="horario">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <a href=""><img src="img/reloj.png" alt="">Lunes - Sábado 8am - 8pm</a>
+            <br><br>
+        </div>
+    </footer>
+    <div class="group-2">
+        <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
+    </div>
+
+</body>
+</html>
