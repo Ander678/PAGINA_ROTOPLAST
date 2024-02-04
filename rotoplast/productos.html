@@ -2,63 +2,63 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Tienda</title>
-
-	<link rel="stylesheet" href="css/estilo.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIECAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/SAL.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
-	<script src="js/productos.js"></script>
 </head>
 <body>
 
 	<header>
-        <a href="" class="logo"><img src="img/SAL.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/SAL.png" alt=""></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navbar">
-            <li><a href="index.html">INCIO</a></li>
-            <li><a href="#linea-hogar">LÍNEA HOGAR</a></li>
-            <li><a href="#agroindustria">AGROINDUSTRIA</a></li>
-            <li><a href="#tienda">TIENDA</a></li>
-            <li><a href="#contactenos">CONTÁCTENOS</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#beneficios">BENEFICIOS</a></li>
+            <li><a href="productos.html">TIENDA <span><i class='bx bxs-chevron-down'></i></span></a>
+                <ul class="menu-vertical">
+                    <li><a href="productos.html"><span><i class='bx bx-chevron-right' ></i></span>Agroindustria</a></li>
+                    <li><a href="productos.html"><span><i class='bx bx-chevron-right' ></i></span>Línea de Hogar</a></li>
+                </ul>
+            </li>
+            <li><a href="#encuentranos">UBICANOS</a></li>
         </ul>
     </header>
-	 
-    <section></section>
-    <section id="seccion-video-imagen">
+
+    <section class="seccion-video-imagen">
         <div class="promo">
             <h2>Distribuidor autorizado y especializado de Rotoplas.</h2>
             <p>¡Conoce los beneficios y promociones que tenemos para ti!</p>
             <button type="button">CONSULTE AQUI</button>
         </div>
-          <video muted autoplay loop>
+        <video muted autoplay loop>
             <source src="img/agua.mp4" type="video/mp4">
-          </video>
-          <div class="capa"></div>
-        
-      </section>
+        </video>
+        <div class="capa"></div>
+    </section>
 
     
     <section id="seccion-filtro-productos">
-        <h2>Filtro de Productos</h2>
-        
-        <label for="filtro">Buscar Producto:</label>
-        <input type="text" id="filtro" oninput="filtrarProductos()">
-        <button onclick="filtrarPorCategoria('categoria1')">Filtrar Categoría 1</button>
-        <button onclick="filtrarPorCategoria('categoria2')">Filtrar Categoría 2</button>
-        <button onclick="filtrarPorCategoria('categoria3')">Filtrar Categoría 3</button>
-        <button onclick="filtrarPorCategoria('categoria4')">Filtrar Categoría 4</button>
-        <button onclick="filtrarPorCategoria('categoria5')">Filtrar Categoría 5</button>
-        <button onclick="filtrarPorCategoria('categoria6')">Filtrar Categoría 6</button>
-        <button onclick="filtrarPorCategoria('categoria7')">Filtrar Categoría 7</button>
-        <button onclick="filtrarPorCategoria('categoria8')">Filtrar Categoría 8</button>
-        <button onclick="filtrarPorCategoria('categoria9')">Filtrar Categoría 9</button>
-        <button onclick="filtrarPorCategoria('categoria10')">Filtrar Categoría 10</button>
-        
+        <div class="filtros">
+            <label for="filtro">Buscar Producto:</label>
+            <input type="text" id="filtro" oninput="filtrarProductos()">
+            <button onclick="filtrarPorCategoria('categoria1')">Filtrar Categoría 1</button>
+            <button onclick="filtrarPorCategoria('categoria2')">Filtrar Categoría 2</button>
+            <button onclick="filtrarPorCategoria('categoria3')">Filtrar Categoría 3</button>
+            <button onclick="filtrarPorCategoria('categoria4')">Filtrar Categoría 4</button>
+            <button onclick="filtrarPorCategoria('categoria5')">Filtrar Categoría 5</button>
+            <button onclick="filtrarPorCategoria('categoria6')">Filtrar Categoría 6</button>
+            <button onclick="filtrarPorCategoria('categoria7')">Filtrar Categoría 7</button>
+            <button onclick="filtrarPorCategoria('categoria8')">Filtrar Categoría 8</button>
+            <button onclick="filtrarPorCategoria('categoria9')">Filtrar Categoría 9</button>
+            <button onclick="filtrarPorCategoria('categoria10')">Filtrar Categoría 10</button>
+        </div>
         <div id="productos-container">
-           
             <div class="producto" data-nombre="Producto 1" category="categoria1"><img src="img/10000l.jpg" alt="Producto 1"></div>
             <div class="producto" data-nombre="Producto 2" category="categoria2"><img src="img/10000l.jpg" alt="Producto 2"></div>
             <div class="producto" data-nombre="Producto 3" category="categoria3"><img src="img/10000l.jpg" alt="Producto 1"></div>
@@ -69,7 +69,6 @@
             <div class="producto" data-nombre="Producto 8" category="categoria8"><img src="img/10000l.jpg" alt="Producto 2"></div>
             <div class="producto" data-nombre="Producto 9" category="categoria9"><img src="img/10000l.jpg" alt="Producto 1"></div>
             <div class="producto" data-nombre="Producto 10" category="categoria10"><img src="img/10000l.jpg" alt="Producto 2"></div>
-           
         </div>
     </section>
 		
@@ -95,5 +94,6 @@
         <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
     </div>
 
+    <script src="./js/productos.js"></script>
 </body>
 </html>

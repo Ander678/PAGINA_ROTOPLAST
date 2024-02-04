@@ -458,3 +458,128 @@ header{
 }
     
 /*RESPONSIVE*/
+
+
+/* TIENDA */
+
+.seccion-video-imagen {
+    min-height: 50vh;
+    position: relative;
+  }
+  
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+    position: relative;
+    z-index: 2;
+  }
+  .promo h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+.promo p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #20b6e8;
+}
+  .promo button{
+    display: inline-block;
+    background-color: var(--color-texto-secundario);
+    border: none;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 300px;
+    font-size: 1.5rem;
+    color: var(--bf-color);
+    font-weight: 700;
+    transition: 150ms;
+    margin-top: 40px;
+  }
+
+  .promo button:focus{
+    outline: none;
+  }
+
+  .promo button:hover{
+    transform: translate(0, -5px);
+  }
+
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2f2f30;
+    opacity: 0,5;
+    mix-blend-mode: overlay;
+}
+
+#seccion-filtro-productos{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+.filtros{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+
+#productos-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 50px;
+}
+#productos-container img{
+    max-width: 290px;
+    border-radius: 20px;
+}
+.producto{
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.filtros h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.filtros label{
+    font-size: 1.2rem;
+}
+.filtros input{
+    width: 70%;
+    height: 2.5rem;
+    background:#d4d2d2;
+    border: none;
+    border-radius: 10px;
+}
+.filtros button{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: var(--text-color);
+    color:white;
+}
