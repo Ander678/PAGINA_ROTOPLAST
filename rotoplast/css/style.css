@@ -489,11 +489,13 @@ header{
     font-size: 3rem;
     font-weight: 700;
     color: white;
+    text-shadow: 1px 4px 41px rgba(0, 0, 0, 10);
 }
 .promo p{
     font-size: 1.5rem;
     font-weight: 300;
-    color: #20b6e8;
+    color: var(--bf-color);
+    text-shadow: 1px 4px 41px rgba(0, 0, 0, 3);
 }
   .promo button{
     display: inline-block;
@@ -524,62 +526,70 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2f2f30;
+    background: #2f2f3085;
     opacity: 0,5;
     mix-blend-mode: overlay;
 }
 
-#seccion-filtro-productos{
-    display: flex;
-    align-content: center;
-    width: 100%;
-}
-.filtros{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    align-items: center;
-}
-
-#productos-container{
+.productos{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin-left: 50px;
 }
-#productos-container img{
-    max-width: 290px;
-    border-radius: 20px;
+.filtro-busqueda{
+    width: 20%;
 }
-.producto{
-    max-width: 300px;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+.buscador{
+    margin-bottom: 2px 0;
 }
-.filtros h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.filtros label{
-    font-size: 1.2rem;
-}
-.filtros input{
+.buscador input{
     width: 70%;
     height: 2.5rem;
-    background:#d4d2d2;
-    border: none;
     border-radius: 10px;
 }
-.filtros button{
-    width: 70%;
-    height: 40px;
-    margin-top: 10px;
+.buscador button{
+    width: 3rem;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--bf-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.filtro-categoria{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.filtro-categoria button{
+    width: 85%;
+    min-height: 2.8rem;
+    margin: 5px 0;
+    padding: 10px;
+    background: var(--text-color);
+    color: var(--bf-color);
     border: none;
     border-radius: 10px;
-    padding: 6px;
-    font-weight: 500;
-    font-size: 0.95rem;
-    background: var(--text-color);
-    color:white;
+    font-size: 1rem;
+}
+.filtro-litro{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtro-litro h3{
+    width: 100%;
+    font-weight: 700;
+}
+.lista-productos{
+    width: 80%;
+}
+.filtro-litro button{
+    width: 85%;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--bf-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.filtro-litro input{
+    width: 85%;
+    margin-bottom: 10px;
 }

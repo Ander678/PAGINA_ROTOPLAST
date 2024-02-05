@@ -30,48 +30,141 @@
         </ul>
     </header>
 
-    <section class="seccion-video-imagen">
-        <div class="promo">
-            <h2>Distribuidor autorizado y especializado de Rotoplas.</h2>
-            <p>¡Conoce los beneficios y promociones que tenemos para ti!</p>
-            <button type="button">CONSULTE AQUI</button>
-        </div>
-        <video muted autoplay loop>
-            <source src="img/agua.mp4" type="video/mp4">
-        </video>
-        <div class="capa"></div>
-    </section>
+    <main>
+        <section class="seccion-video-imagen">
+            <div class="promo">
+                <h2>Distribuidor autorizado y especializado de Rotoplas.</h2>
+                <p>¡Conoce los beneficios y promociones que tenemos para ti!</p>
+                <button type="button">CONSULTE AQUI</button>
+            </div>
+            <video muted autoplay loop>
+                <source src="img/pexels-rostislav-uzunov-7385122 (2160p).mp4" type="video/mp4">
+            </video>
+            <div class="capa"></div>
+        </section>
 
+        <section class="productos">
+            <div class="filtro-busqueda">
+                <div class="buscador">
+                    <h3>Ingresa un producto</h3>
+                    <input type="text">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                <div class="filtro-categoria">
+                    <h3>Categorías</h3>
+                    <button>Biodigestores</button>
+                    <button>Cisternas</button>
+                    <button>Tanques y accesorios domésticos</button>
+                    <button>Filtros, cartuchos y pruificadores domésticos</button>
+                    <button>Bombas para tanques</button>
+                    <button>Termas</button>
+                </div>
+                <div class="filtro-litro">
+                    <h3>Litros</h3>
+                    <input type="range" min="0" max="100" value="50" class="barra-deslizante">
+                    <button>Aplicar</button>
+                </div>
+            </div>
+            <div class="lista-productos">
+                <div class="populares-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 10,000 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
     
-    <section id="seccion-filtro-productos">
-        <div class="filtros">
-            <label for="filtro">Buscar Producto:</label>
-            <input type="text" id="filtro" oninput="filtrarProductos()">
-            <button onclick="filtrarPorCategoria('categoria1')">Filtrar Categoría 1</button>
-            <button onclick="filtrarPorCategoria('categoria2')">Filtrar Categoría 2</button>
-            <button onclick="filtrarPorCategoria('categoria3')">Filtrar Categoría 3</button>
-            <button onclick="filtrarPorCategoria('categoria4')">Filtrar Categoría 4</button>
-            <button onclick="filtrarPorCategoria('categoria5')">Filtrar Categoría 5</button>
-            <button onclick="filtrarPorCategoria('categoria6')">Filtrar Categoría 6</button>
-            <button onclick="filtrarPorCategoria('categoria7')">Filtrar Categoría 7</button>
-            <button onclick="filtrarPorCategoria('categoria8')">Filtrar Categoría 8</button>
-            <button onclick="filtrarPorCategoria('categoria9')">Filtrar Categoría 9</button>
-            <button onclick="filtrarPorCategoria('categoria10')">Filtrar Categoría 10</button>
-        </div>
-        <div id="productos-container">
-            <div class="producto" data-nombre="Producto 1" category="categoria1"><img src="img/10000l.jpg" alt="Producto 1"></div>
-            <div class="producto" data-nombre="Producto 2" category="categoria2"><img src="img/10000l.jpg" alt="Producto 2"></div>
-            <div class="producto" data-nombre="Producto 3" category="categoria3"><img src="img/10000l.jpg" alt="Producto 1"></div>
-            <div class="producto" data-nombre="Producto 4" category="categoria4"><img src="img/10000l.jpg" alt="Producto 2"></div>
-            <div class="producto" data-nombre="Producto 5" category="categoria5"><img src="img/10000l.jpg" alt="Producto 1"></div>
-            <div class="producto" data-nombre="Producto 6" category="categoria6"><img src="img/10000l.jpg" alt="Producto 2"></div>
-            <div class="producto" data-nombre="Producto 7" category="categoria7"><img src="img/10000l.jpg" alt="Producto 1"></div>
-            <div class="producto" data-nombre="Producto 8" category="categoria8"><img src="img/10000l.jpg" alt="Producto 2"></div>
-            <div class="producto" data-nombre="Producto 9" category="categoria9"><img src="img/10000l.jpg" alt="Producto 1"></div>
-            <div class="producto" data-nombre="Producto 10" category="categoria10"><img src="img/10000l.jpg" alt="Producto 2"></div>
-        </div>
-    </section>
-		
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 10,000 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 10,000 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>CISTERNA 10,000 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+    
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/10000l.jpg" alt="">
+                        </div>
+                        <h4>BIODIGESTOR 1,300 LTS.</h4>
+                        <a href="" class="btn">COTIZA AHORA!</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
 	<footer id="footer">
         <div class="socials">
             <h4>CONTACTANOS</h4>
