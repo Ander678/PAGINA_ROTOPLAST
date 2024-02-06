@@ -43,7 +43,6 @@ function filtrarPorCantidad() {
 }
 
 function obtenerCantidadProducto(producto) {
-    // Supongamos que esta función obtiene la cantidad del producto, por ejemplo, a partir de un atributo data-
     return parseInt(producto.getAttribute('data-cantidad'));
 }
 
