@@ -28,4 +28,22 @@ function filtrarPorCategoria(categoria) {
     });
 }
 
+function filtrarPorCantidad() {
+    var valorSeleccionado = document.getElementById('rango-litros').value;
+    var productos = document.querySelectorAll('.box');
+
+    productos.forEach(function(producto) {
+        var cantidadProducto = obtenerCantidadProducto(producto); 
+        if (cantidadProducto >= valorSeleccionado) {
+            producto.style.display = 'block';
+        } else {
+            producto.style.display = 'none';
+        }
+    });
+}
+
+function obtenerCantidadProducto(producto) {
+    // Supongamos que esta función obtiene la cantidad del producto, por ejemplo, a partir de un atributo data-
+    return parseInt(producto.getAttribute('data-cantidad'));
+}
 
