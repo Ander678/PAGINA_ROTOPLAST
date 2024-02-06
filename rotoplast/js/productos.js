@@ -1,7 +1,7 @@
 // JavaScript para filtrar productos por barra de búsqueda
 function filtrarProductos() {
     var filtro = document.getElementById('filtro').value.toLowerCase();
-    var productos = document.querySelectorAll('.producto');
+    var productos = document.querySelectorAll('.box');
 
     productos.forEach(function(producto) {
         var nombre = producto.getAttribute('data-nombre').toLowerCase();
@@ -16,15 +16,16 @@ function filtrarProductos() {
 
 // JavaScript para filtrar productos por categoría usando un botón
 function filtrarPorCategoria(categoria) {
-    var productos = document.querySelectorAll('.producto');
+    var productos = document.querySelectorAll('.box');
 
     productos.forEach(function(producto) {
         var categoriaProducto = producto.getAttribute('category').toLowerCase();
-        if (categoriaProducto === categoria || categoria === 'all') {
+        if (categoriaProducto === categoria.toLowerCase() || categoria === 'all') {
             producto.style.display = 'block';
         } else {
             producto.style.display = 'none';
         }
     });
 }
+
 

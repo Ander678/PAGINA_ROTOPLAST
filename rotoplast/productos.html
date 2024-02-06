@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/SAL.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="js/productos.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -47,17 +48,18 @@
             <div class="filtro-busqueda">
                 <div class="buscador">
                     <h3>Ingresa un producto</h3>
-                    <input type="text">
+                    <input type="text" id="filtro" oninput="filtrarProductos()">
                     <button><i class='bx bx-search'></i></button>
                 </div>
                 <div class="filtro-categoria">
                     <h3>Categorías</h3>
-                    <button>Biodigestores</button>
-                    <button>Cisternas</button>
-                    <button>Tanques y accesorios domésticos</button>
-                    <button>Filtros, cartuchos y pruificadores domésticos</button>
-                    <button>Bombas para tanques</button>
-                    <button>Termas</button>
+                    <button onclick="filtrarPorCategoria('all')">Mostrar Todos</button>
+                    <button onclick="filtrarPorCategoria('Biodigestores')">Biodigestores</button>
+                    <button onclick="filtrarPorCategoria('Cisternas')">Cisternas</button>
+                    <button onclick="filtrarPorCategoria('Tanques y accesorios domésticos')">Tanques y accesorios domésticos</button>
+                    <button onclick="filtrarPorCategoria('Filtros, cartuchos y pruificadores domésticos')">Filtros, cartuchos y pruificadores domésticos</button>
+                    <button onclick="filtrarPorCategoria('Bombas para tanques')">Bombas para tanques</button>
+                    <button onclick="filtrarPorCategoria('Termas')">Termas</button>
                 </div>
                 <div class="filtro-litro">
                     <h3>Litros</h3>
@@ -67,7 +69,7 @@
             </div>
             <div class="lista-productos">
                 <div class="populares-container">
-                    <div class="box">
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -75,7 +77,7 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -83,14 +85,14 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
                         <h4>BIODIGESTOR 1,300 LTS.</h4>
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -98,7 +100,7 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -106,14 +108,14 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
                         <h4>BIODIGESTOR 1,300 LTS.</h4>
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -121,7 +123,7 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -129,14 +131,14 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
                         <h4>BIODIGESTOR 1,300 LTS.</h4>
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-nombre="CISTERNA" category="Cisternas">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -144,7 +146,7 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
@@ -152,7 +154,7 @@
                         <a href="" class="btn">COTIZA AHORA!</a>
                     </div>
     
-                    <div class="box">
+                    <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores">
                         <div class="box-img">
                             <img src="img/10000l.jpg" alt="">
                         </div>
