@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Reclamaciones</title>
     <link rel="stylesheet" href="css/reclamo.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
-    <h1>Hoja de Reclamaciones</h1>
+    <header>
+        <a href="index.html" class="logo"><img src="img/SAL.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#beneficios">BENEFICIOS</a></li>
+            <li><a href="productos.html">TIENDA <span><i class='bx bxs-chevron-down'></i></span></a>
+                <ul class="menu-vertical">
+                    <li><a href="productos.html"><span><i class='bx bx-chevron-right' ></i></span>Agroindustria</a></li>
+                    <li><a href="productos.html"><span><i class='bx bx-chevron-right' ></i></span>Línea de Hogar</a></li>
+                </ul>
+            </li>
+            <li><a href="#encuentranos">UBICANOS</a></li>
+        </ul>
+    </header>
+
+
+
+    <h1>HOJA DE RECLAMACIONES</h1>
     <br><br>
 
-    <div id="formulario-container">
         <form action="#" method="post">
             <h2>Tus datos</h2>
 
@@ -29,14 +48,35 @@
             <input type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" title="Por favor, ingrese un número de teléfono válido de 9 dígitos"> 
 
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <input type="text" id="mensaje" name="mensaje" required>
 
             <div class="form-footer">
                 <button type="submit">Enviar Reclamo</button>
                 <a href="#" id="volver-link">Volver</a>
             </div>
         </form>
-    </div>
     <div id="mensaje-confirmacion">El reclamo ha sido enviado y se está procesando. Gracias por tu paciencia.</div>
+
+    <footer id="footer">
+        <div class="socials">
+            <h4>CONTACTANOS</h4>
+            <a href="https://www.facebook.com/profile.php?id=100078193081516" target="_blank"><img src="img/ico_fb.png" alt="">DIECAM</a>
+            <a href=""><img src="img/ico_wssp.png" alt="">+51 999 999 999</a>
+        </div>
+        <div class="ubicacion">
+            <h4>UBICANOS</h4>
+            <a href="https://maps.app.goo.gl/ZWHRixfnjfQ9p83x9" target="_blank"><img src="img/ubi.png" alt="">Av. La Mariscala 727, Lima 15818, Perú</a>
+            <br>
+            <br>
+        </div>
+        <div class="horario">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <a ><img src="img/reloj.png" alt="">Lunes - Sábado 8am - 8pm</a>
+            <br><br>
+        </div>
+    </footer>
+    <div class="group-2">
+        <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
+    </div>
 </body>
 </html>
