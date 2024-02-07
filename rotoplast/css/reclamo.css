@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(205, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3a98cf;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e5fe7;
+}
+#formulario-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+#mensaje-confirmacion {
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 999;
+}
+#volver-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff; /* Color del enlace, puedes cambiarlo */
+    text-decoration: none;
+}
+
+#volver-link:hover {
+    text-decoration: underline;
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
