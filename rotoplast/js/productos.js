@@ -46,3 +46,29 @@ function obtenerCantidadProducto(producto) {
     return parseInt(producto.getAttribute('data-cantidad'));
 }
 
+// EL INPUT 
+var elrangolitros = document.querySelector('#rango-litros');
+if (elInput3) {
+  var w = parseInt(window.getComputedStyle(elInput3, null).getPropertyValue('width'));
+
+  // LA ETIQUETA 
+  var etq = document.querySelector('.filtro-filtro');
+  if (etq) {
+    // el valor de la etiqueta (el tooltip) 
+    etq.innerHTML = elrangolitros.value;
+
+    // calcula la posición inicial de la etiqueta (el tooltip); 
+    var pxls = w / 100;
+
+    etq.style.left = ((elrangolitros.value * pxls) - 15) + 'px';
+
+    elrangolitros.addEventListener('input', function() {
+      // cambia el valor de la etiqueta (el tooltip) 
+      etq.innerHTML = elrangolitros.value;
+      // cambia la posición de la etiqueta (el tooltip) 
+      etq.style.left = ((elrangolitros.value * pxls) - 15) + 'px';
+
+    }, false);
+  }
+}
+
