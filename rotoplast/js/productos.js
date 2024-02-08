@@ -46,6 +46,7 @@ function obtenerCantidadProducto(producto) {
     return parseInt(producto.getAttribute('data-cantidad'));
 }
 
+/*
 // EL INPUT 
 var elrangolitros = document.querySelector('#rango-litros');
 if (elInput3) {
@@ -72,3 +73,4 @@ if (elInput3) {
   }
 }
 
+*/
