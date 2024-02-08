@@ -13,11 +13,12 @@ label {
     margin-bottom: 10px;
 }
 
-input, textarea {
+input{
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 button {
@@ -67,10 +68,11 @@ button:hover {
     justify-content: space-between;
     align-items: center;
 }
-#HOJA{
+#HOJA {
     font-family: Arial, sans-serif;
-    margin: 20px;
     padding: 20px;
     background-color: #ffffff;
     align-items: center;
+    margin-top: 20px;
+    position: relative;
 }
