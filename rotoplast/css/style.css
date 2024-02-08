@@ -237,24 +237,13 @@ header{
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
     /*animation: pulsar 3s infinite;*/
 }
-@keyframes pulsar {
-    0% {
-        box-shadow: 0 0 8px var(--color-texto-primario);
-    }
-    50% {
-        box-shadow: 0 0 17px var(--text-color);
-    }
-    100% {
-        box-shadow: 0 0 8px var(--color-texto-primario);
-    }
-}
 .populares-container .box .box-img{
     width: 100%;
-    height: 500px;
+    max-height: 500px;
 }
 .populares-container .box .box-img img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     border-radius: 1rem;
     object-fit: cover;
     object-position: center;
@@ -510,6 +499,7 @@ header{
     font-weight: 700;
     transition: 150ms;
     margin-top: 40px;
+    cursor: pointer;
   }
 
   .promo button:focus{
@@ -569,6 +559,13 @@ header{
     border: none;
     border-radius: 10px;
     font-size: 1rem;
+    cursor: pointer;
+    
+}
+.filtro-categoria button:hover{
+    background-color: var(--color-primario);
+    color: white;
+    transition: 0.3s ease;
 }
 .filtro-litro{
     display: flex;
@@ -592,4 +589,26 @@ header{
 .filtro-litro input{
     width: 85%;
     margin-bottom: 10px;
+}
+/**/
+.lista-productos .populares-container .box .box-img{
+    width: 100%;
+    height: 300px;
+    
+}
+.lista-productos .populares-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+.filtro-categoria .mostrar-todos{
+    background-color: rgb(8, 107, 8);
+    color: white;
+}
+.filtro-categoria .mostrar-todos:hover{
+    background-color: rgb(15, 175, 15);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
 }
