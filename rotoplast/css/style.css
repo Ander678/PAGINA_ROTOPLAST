@@ -352,7 +352,7 @@ header{
 .ofrecemos-img img{
     /*width: 100%;*/
     min-width: 250px;
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
     border-radius: 1.5rem;
 }
