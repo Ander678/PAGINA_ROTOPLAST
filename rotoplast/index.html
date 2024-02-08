@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/SAL.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -153,8 +154,9 @@
     </main>
     <section id="encuentranos">
         <h2>Aquí estamos <span><i class='bx bx-been-here'></i></span> </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.4793694298891!2d-76.92453366751127!3d-12.191631018771675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9bd729aa78f%3A0x8d814a697c22e705!2sDiecam%20Inversiones%20SAC!5e0!3m2!1ses-419!2spe!4v1705709056276!5m2!1ses-419!2spe" width="100%" height="400vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div id="map"></div>
+        <!--<iframe async src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.4793694298891!2d-76.92453366751127!3d-12.191631018771675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9bd729aa78f%3A0x8d814a697c22e705!2sDiecam%20Inversiones%20SAC!5e0!3m2!1ses-419!2spe!4v1705709056276!5m2!1ses-419!2spe" width="100%" height="400vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>-->
     </section>
     <footer id="footer">
         <div class="socials">
@@ -180,6 +182,10 @@
     </div>
     <script src="js/animacion.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+    crossorigin=""></script>
+    <script src="js/mapa.js"></script>
 </body>
 
 </html>
