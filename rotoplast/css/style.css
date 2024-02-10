@@ -753,7 +753,7 @@ header{
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (min-width: 555px) and (max-width: 600px) {
     body {
         padding: 0;
     }
@@ -762,6 +762,204 @@ header{
     }
     .logo img {
         width: 80px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #eeeff1;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .bx {
+        font-size: 20px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .text{
+        margin-top: 100px;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text h1 span{
+        color:aqua;
+    }
+    .text p{
+        color: #fff;
+        text-align: justify;
+    }
+    .form-container form {
+        left: 20px;
+        right: 20px;
+    }
+    .nosotros-img{
+        order: 2;
+    }
+    .nosotros-container,
+    .ofrecemos-container {
+        width: 100%;
+        transform: translateX(0);
+        text-align: justify;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .socials,
+    #footer .ubicacion,
+    #footer .horario {
+        padding: 10px;
+    }
+    #encuentranos iframe {
+        height: 200px;
+    }
+    .group-2 small {
+        font-size: 12px;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-busqueda {
+       width: auto;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 541px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 15px;
+        position: relative;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .home{
+        position: relative;;
+    }
+    .nosotros-img img{
+        width: 100%;
+    }
+    .ofrecemos-img img{
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #eeeff1;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .bx {
+        font-size: 20px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .text{
+        padding-bottom: 1px;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text h1 span{
+        color:aqua;
+    }
+    .text p{
+        color: #fff;
+        text-align: justify;
+    }
+    .form-container form {
+        left: 20px;
+        right: 20px;
+        margin-bottom: -50px;
+    }
+    .nosotros-img{
+        order: 2;
+    }
+    .nosotros-container,
+    .ofrecemos-container {
+        width: 100%;
+        transform: translateX(0);
+        text-align: justify;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .socials,
+    #footer .ubicacion,
+    #footer .horario {
+        padding: 10px;
+    }
+    #encuentranos iframe {
+        height: 200px;
+    }
+    .group-2 small {
+        font-size: 12px;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-busqueda {
+       width: auto;
+    }
+}
+@media only screen and (min-width: 542px) and (max-width: 554px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 15px;
+        position: relative;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .home{
+        position: relative;;
+    }
+    .nosotros-img img{
+        width: 100%;
+    }
+    .ofrecemos-img img{
+        width: 100%;
     }
     .navbar {
         flex-direction: column;
@@ -1075,5 +1273,46 @@ header{
     .nosotros-img img{
         max-width: 100%;
         max-height: 100%;
+    }
+}
+@media only screen and (max-width: 536px){
+    .form-container form {
+        left: 20px;
+        right: 20px;
+        margin-bottom: -75px;
+    }
+    .text p{
+        margin-top: 10px;
+        color: #ffffff;
+        text-shadow: none;
+        font-weight: 300;
+        text-shadow: 1px 1px 3px #000000;
+    }
+    .text h1 {
+        text-align: center;
+    }
+    .text h1 span{
+        color: var(--color-texto-primario);
+    }
+}
+@media only screen and (max-width: 507px){
+    .form-container form {
+        left: 20px;
+        right: 20px;
+        margin-bottom: -75px;
+    }
+    .text p{
+        margin-top: 10px;
+        color: #ffffff;
+        text-shadow: none;
+        font-weight: 400;
+        text-shadow: 1px 1px 3px #000000;
+    }
+    .text h1 {
+        text-align: center;
+        margin-top: -30px;
+    }
+    .text h1 span{
+        color: var(--color-texto-primario);
     }
 }

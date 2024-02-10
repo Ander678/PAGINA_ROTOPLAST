@@ -75,15 +75,31 @@ button:hover {
     position:static;
     height: 68vh;
     display: block;
-    margin-bottom: 450px;
+    margin-bottom: 250px;
 }
-@media only screen and (min-width: 601px) and (max-width: 696px) {
+@media only screen and (min-width: 601px) and (max-width: 633px){
+    #HOJA h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 60px;
+    }
+    #HOJA h2{
+        font-size: 30px;
+    }
+    #HOJA label{
+        font-size: 20px;
+    }
+    #HOJA input{
+        font-size: 20px;
+    }
+    .form-footer{
+        padding-top: 50px;
+    }
     #HOJA{
-        padding-bottom: 850px;
-        display: block;
+        padding-bottom: 750px
     }
 }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 634px) and (max-width: 1024px) {
     #HOJA h1{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -101,4 +117,7 @@ button:hover {
     .form-footer{
         padding: 75px;
     }
+    #HOJA{
+        padding-bottom: 950px;
+    }    
 }
