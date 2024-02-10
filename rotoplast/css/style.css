@@ -640,6 +640,8 @@ header{
     height: 40vh;
 }
 
+/*MEDIA QUERRYS*/
+
 @media only screen and (max-width: 480px) {
     body {
         padding: 0;
@@ -681,10 +683,11 @@ header{
         width: 480px;
     }
     .text{
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .text h1 {
-        font-size: 2rem;
+        font-size: 30PX;
+        text-align: center;
     }
     .text h1 span{
         color:aqua;
@@ -692,10 +695,12 @@ header{
     .text p{
         color: #fff;
         text-align: justify;
+        font-size: 15px;
     }
     .form-container form {
         left: 20px;
         right: 20px;
+        margin-bottom: -60px;
     }
     .nosotros-img{
         order: 2;
