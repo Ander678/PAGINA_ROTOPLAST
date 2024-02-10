@@ -16,6 +16,7 @@ label {
 input{
     width: 100%;
     padding: 8px;
+    display: block;
     margin-bottom: 15px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -56,13 +57,6 @@ button:hover {
     display: none;
     z-index: 999;
 }
-#volver-link {
-    display: block;
-    text-align: center;
-    margin-top: 0px;
-    color: #007bff;
-    text-decoration: none;
-}
 
 #volver-link:hover {
     text-decoration: underline;
@@ -80,4 +74,25 @@ button:hover {
     margin-top: 80px;
     position:static;
     height: 68vh;
+    display: block;
+    margin-bottom: 450px;
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #HOJA h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 60px;
+    }
+    #HOJA h2{
+        font-size: 40px;
+    }
+    #HOJA label{
+        font-size: 30px;
+    }
+    #HOJA input{
+        font-size: 30px;
+    }
+    .form-footer{
+        padding: 75px;
+    }
 }

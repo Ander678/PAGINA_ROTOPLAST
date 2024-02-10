@@ -21,11 +21,7 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="index.html#nosotros">NOSOTROS</a></li>
             <li><a href="index.html#beneficios">BENEFICIOS</a></li>
-            <li><a href="productos.html">TIENDA <span><i class='bx bxs-chevron-down'></i></span></a>
-                <ul class="menu-vertical">
-                    <li><a><span><i class='bx bx-chevron-right' ></i></span>Agroindustria</a></li>
-                    <li><a><span><i class='bx bx-chevron-right' ></i></span>Línea de Hogar</a></li>
-                </ul>
+            <li><a href="productos.html">TIENDA</a>
             </li>
             <li><a href="index.html#encuentranos">UBICANOS</a></li>
         </ul>
@@ -35,7 +31,8 @@
     <div id="HOJA">
         <h1>HOJA DE RECLAMACIONES</h1>
         <br>
-        <form action="" method="post">
+        <form action="bd/registro.php" method="POST">
+
             <h2>Tus datos</h2><br>
             <label for="nombre">Nombres:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -53,11 +50,18 @@
             <input type="text" id="mensaje" name="mensaje" required>
 
             <div class="form-footer">
-                <button type="submit">Enviar Reclamo</button>
-                <a href="index.html" id="volver-link">Volver</a>
+                <td align="center">
+                    <input
+                      type="submit"
+                      name="enviar"
+                      id="enviar"
+                      value="Enviar Reclamo"
+                    />
+                  </td>
             </div>
         </form>
     </div>
+    
 
     <footer id="footer">
         <div class="socials">
@@ -74,12 +78,14 @@
         <div class="horario">
             <h4>HORARIOS DE ATENCIÓN</h4>
             <a ><img src="img/reloj.png" alt="">Lunes - Sábado 8am - 8pm</a>
+            <a href="reclamo.html" class="libro-reclamaciones-logo"><img src="img/libro-reclamaciones.png" style="width: 100px; margin: auto;" alt=""></a>
             <br><br>
         </div>
     </footer>
     <div class="group-2">
         <small>&copy; 2024 <b>DIECAM</b> - Todos los derechos reservados</small>
     </div>
+    <script src="js/menuburger.js"></script>
     <script src="js/animacion.js"></script>
     <script src="js/main.js"></script>
 </body>

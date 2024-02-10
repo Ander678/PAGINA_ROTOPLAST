@@ -639,3 +639,399 @@ header{
     width: 100%;
     height: 40vh;
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 15px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #eeeff1;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .bx {
+        font-size: 20px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+        width: 480px;
+    }
+    .text{
+        margin-top: 100px;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text h1 span{
+        color:aqua;
+    }
+    .text p{
+        color: #fff;
+        text-align: justify;
+    }
+    .form-container form {
+        left: 20px;
+        right: 20px;
+    }
+    .nosotros-img{
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .nosotros-img img{
+        max-width: 100%;
+        height: auto;
+    }
+    .ofrecemos-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .ofrecemos-img img{
+        max-width: 100%;
+        height: auto;
+    }
+    .nosotros-container,
+    .ofrecemos-container {
+        width: 100%;
+        transform: translateX(0);
+        text-align: justify;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .socials,
+    #footer .ubicacion,
+    #footer .horario {
+        padding: 10px;
+    }
+    #encuentranos iframe {
+        height: 200px;
+    }
+    .group-2 small {
+        font-size: 12px;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-busqueda {
+       width: auto;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 15px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #eeeff1;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .bx {
+        font-size: 20px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .text{
+        margin-top: 100px;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text h1 span{
+        color:aqua;
+    }
+    .text p{
+        color: #fff;
+        text-align: justify;
+    }
+    .form-container form {
+        left: 20px;
+        right: 20px;
+    }
+    .nosotros-img{
+        order: 2;
+    }
+    .nosotros-container,
+    .ofrecemos-container {
+        width: 100%;
+        transform: translateX(0);
+        text-align: justify;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .socials,
+    #footer .ubicacion,
+    #footer .horario {
+        padding: 10px;
+    }
+    #encuentranos iframe {
+        height: 200px;
+    }
+    .group-2 small {
+        font-size: 12px;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-busqueda {
+       width: auto;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 0;
+    }
+    header {
+        padding: 15px;
+        height: 100px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #eeeff1;
+        display: none;
+    }
+    .navbar.show {
+        display: flex;
+    }
+    .navbar li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+        font-size: 40px;
+    }
+    .bx {
+        font-size: 50px;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+    }
+    .text h1 {
+        font-size: 5rem;
+        
+    }
+    .text{
+        margin-top: 100px;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000000;
+    }  
+    .text h1 span{
+        color:var(--color-texto-primario);
+        text-shadow: 1px 1px 2px #000000bb;
+    }
+    .text p{
+        margin-top: 100px;
+        color: #ffffff;
+        text-shadow: none;
+        font-size: 25px;
+        font-weight: 500;
+        text-shadow: 1px 1px 3px #000000;
+    }
+    .btn-home{
+        font-size: 25px;
+        display:block;
+    }
+    .form-container form {
+        left: 20px;
+        right: 20px;
+    }
+    .input-box{
+        font-size: 30px;
+    }
+    .input-box select{
+        font-size: 20px;
+    }
+    .btnBuscar{
+        font-size: 150px;
+    }
+    .nosotros-img{
+        order: 2;
+    }
+    .nosotros-img img{
+        max-width: 750px;
+    }
+    .ofrecemos-img img{
+        max-width: 750px;
+    }
+    .nosotros-text span{
+        font-size: 125px;
+    }
+    .nosotros-text p{
+        font-size: 25px;
+    }
+    .ofrecemos-text span{
+        font-size: 120px;
+    }
+    .ofrecemos-text p{
+        font-size: 25px;
+    }
+    .nosotros-container,
+    .ofrecemos-container {
+        width: 100%;
+        transform: translateX(0);
+        text-align: justify;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .socials,
+    #footer .ubicacion,
+    #footer .horario {
+        padding: 10px;
+    }
+    #encuentranos iframe {
+        height: 200px;
+    }
+    .group-2 small {
+        font-size: 12px;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .filtro-busqueda {
+       width: auto;
+    }
+    .box h4{
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 25px;
+    }
+    .populares button{
+        margin: 1rem 0;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: red;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .beneficios-container .box .bx{
+        font-size: 60px;
+    }
+    .beneficios-container .box h3{
+        font-size: 30px;
+    }
+    .beneficios-container .box p{
+        font-size: 20px;
+    }
+    #encuentranos h2{
+        font-size: 50px;
+    }
+    #map{
+        height: 50vh;
+    }
+    #footer h4{
+        font-size: 30px;
+    }
+    #footer a{
+        font-size: 25px;
+    }
+    .promo h2{
+        text-align: center;
+    }
+    .buscador{
+        text-align: center;
+        font-size: 25px;
+    }
+    .filtro-categoria{
+        text-align: center;
+        font-size: 25px;
+        align-items: center;
+    }
+    .filtro-categoria .mostrar-todos{
+        font-size: 20px;
+    }
+    .filtro-categoria button{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .lista-productos{
+        align-items: center;
+        align-content: center;
+        padding-left: 175px;
+    }
+}
