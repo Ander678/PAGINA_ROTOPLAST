@@ -43,6 +43,6 @@ if(!$connection)
                             
         $resultado = mysqli_query($connection,$instruccion_SQL);
 
-            header("Location: ../index.html?mensaje=exito");
+            header("Location: ../confirmacion.html?");
             exit();
 ?>
