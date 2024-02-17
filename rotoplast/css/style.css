@@ -636,6 +636,7 @@ header{
 .productos{
     display: flex;
     flex-wrap: wrap;
+    background: linear-gradient(var(--bunting-200),var(--bunting-950));
 }
 .filtro-busqueda{
     width: 20%;
@@ -703,6 +704,10 @@ header{
     margin-bottom: 10px;
 }
 /**/
+.lista-productos .populares-container .box {
+    background-color: white;
+}
+
 .lista-productos .populares-container .box .box-img{
     width: 100%;
     height: 300px;
