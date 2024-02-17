@@ -122,7 +122,7 @@ header{
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: url(../img//1707363976312.jpg);
+    background-image: url(../img/fondoroto.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
@@ -237,17 +237,17 @@ header{
 }
 .beneficios-container .box .bxs-paper-plane {
     background-image: linear-gradient(to right, #80FF52, #26B100);
-    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
     color: transparent; /* Oculta el color del icono */
 }
 .beneficios-container .box .bxs-truck {
     background-image: linear-gradient(to right, #ffc852, #dd6502);
-    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
     color: transparent; /* Oculta el color del icono */
 }
 .beneficios-container .box .bxs-timer {
     background-image: linear-gradient(to right, #fff82e, #cca402);
-    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
     color: transparent; /* Oculta el color del icono */
 }
 /*.beneficios-container .box .bx:hover, .beneficios-container .bx .bxs-timer{
@@ -276,7 +276,7 @@ header{
     /*animation: pulsar 3s infinite;*/
 }
 .populares .populares-container .box{
-    background: linear-gradient(var(--bunting-500),var(--bunting-100));
+    background: linear-gradient(var(--bunting-100),var(--bunting-400));
 }
 .populares-container .box .box-img{
     width: 100%;
@@ -636,7 +636,7 @@ header{
 .productos{
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(var(--bunting-200),var(--bunting-950));
+    background: linear-gradient(var(--bunting-400),var(--bunting-950));
 }
 .filtro-busqueda{
     width: 20%;
