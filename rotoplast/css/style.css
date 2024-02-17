@@ -17,6 +17,17 @@
     --color-negro-bajo:#212226;
     --color-plomo-claro:#666666;
     --gradient: linear-gradient(#0a1f4a,#156796);
+    --bunting-50: #ecf8ff;
+    --bunting-100: #d5edff;
+    --bunting-200: #b4e1ff;
+    --bunting-300: #81d0ff;
+    --bunting-400: #46b4ff;
+    --bunting-500: #1c90ff;
+    --bunting-600: #0470ff;
+    --bunting-700: #0057f7;
+    --bunting-800: #0646c7;
+    --bunting-900: #0c3f9c;
+    --bunting-950: #0a1f4a;
 }
 html::-webkit-scrollbar{
     width: 0.5rem;
@@ -228,6 +239,14 @@ header{
     background: var(--gradient);
     color:#fff;
 }*/
+.populares span{
+    color: var(--bunting-100);
+    
+}
+.populares h2{
+    color: var(--bunting-200);
+    font-size: 2.5rem;
+}
 .populares-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,auto));
@@ -238,7 +257,11 @@ header{
     padding: 10px;
     border-radius: 1rem;
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    
     /*animation: pulsar 3s infinite;*/
+}
+.populares .populares-container .box{
+    background: var(--bunting-50);
 }
 .populares-container .box .box-img{
     width: 100%;
@@ -250,6 +273,7 @@ header{
     border-radius: 1rem;
     object-fit: cover;
     object-position: center;
+    background: white;
 }
 .populares-container .box h4{
     padding: 0 10px;
@@ -277,6 +301,7 @@ header{
 }
 .populares{
     text-align: center;
+    background: linear-gradient(var(--bunting-950),var(--bunting-800));
 }
 .populares button{
     margin: 1rem 0;
@@ -294,6 +319,9 @@ header{
     font-size: 1.2rem;
     box-shadow: 1px 5px 10px rgb(223, 124, 67);
 }
+.nosotros{
+    background: linear-gradient(var(--bunting-800),var(--bunting-600));
+}
 .nosotros-container{
     /*display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -308,13 +336,14 @@ header{
     margin-top: 5rem;
     /* animacion al scroll */
     transform: translateX(-200%);
-    transition: transform 1s ease;
 }
 .nosotros-img{
     margin: auto;
     margin: 0px 5px;
     min-width: 50px;
+    
 }
+
 .nosotros-container:nth-of-type(even){
     transform: translateX(200%);
 }
@@ -322,16 +351,16 @@ header{
     transform: translateX(0);
 }
 .nosotros-img img{
-    /*width: 100%;
-    */min-width: 50px;
+    min-width: 50px;
     max-width: 450px;
     height: auto;
     border-radius: 1.5rem;
+
 }
 .nosotros-text span{
     font-weight: 500;
     font-size: 8vh;
-    color: var(--text-color);
+    color: var(--bunting-100);
 }
 .nosotros-text{
     width: 600px;
@@ -339,11 +368,55 @@ header{
 }
 .nosotros-text p{
     margin: 0.5rem 0 1.4rem;
+    color: var(--bunting-50);
+}
+
+.slider-frame {
+	width: 35%; /* Cambiar el valor según el porcentaje deseado */
+	height: auto;
+	overflow: hidden;
+}
+
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 10s infinite alternate ease-in-out;
+    align-items: center;
+}
+
+.slider-frame li {
+	width: 25%; /* Cambiar el valor según el número de imágenes en el slider */
+	list-style: none;
+    text-align: center;
+}
+
+.slider-frame img {
+	width: 50vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 53px -30px rgba(0,0,0,0.75);
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 
 
 /*ofrecemos*/
-
+.ofrecemos{
+    background: linear-gradient(var(--bunting-600),white);
+}
 .ofrecemos-container{
     /*display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -364,6 +437,7 @@ header{
 .ofrecemos-img{
     margin: auto;
     margin: 0px 5px;
+    
 }
 .ofrecemos-container:nth-of-type(even){
     transform: translateX(-400%);
@@ -377,6 +451,7 @@ header{
     max-width: 450px;
     height: auto;
     border-radius: 1.5rem;
+    box-shadow: 10px 10px 53px -30px rgba(0,0,0,0.75);
 }
 .ofrecemos-text span{
     font-weight: 500;
@@ -640,6 +715,8 @@ header{
     height: 40vh;
 }
 
+
+
 /*MEDIA QUERRYS*/
 
 @media only screen and (max-width: 480px) {
@@ -702,12 +779,14 @@ header{
         right: 20px;
         margin-bottom: -60px;
     }
+    
     .nosotros-img{
         order: 2;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        flex: 1;
     }
     .nosotros-img img{
         max-width: 100%;
@@ -1192,6 +1271,9 @@ header{
         font-size: 30px;
         cursor: pointer;
         transition: 0.5s;
+    }
+    #beneficios{
+        background: linear-gradient(var(--bunting-900),var(--bunting-600));
     }
     .beneficios-container .box .bx{
         font-size: 60px;
