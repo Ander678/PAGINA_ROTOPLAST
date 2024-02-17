@@ -224,7 +224,7 @@ header{
     padding: 20px;
 }
 .beneficios-container .box .bx{
-    font-size: 34px;
+    font-size:80px;
     padding: 10px;
     background: #eeeff1;
     border-radius: 0.5rem;
@@ -234,6 +234,21 @@ header{
     font-size: 1.3rem;
     font-weight: 500;
     margin: 1.4rem 0 0.5rem;
+}
+.beneficios-container .box .bxs-paper-plane {
+    background-image: linear-gradient(to right, #80FF52, #26B100);
+    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    color: transparent; /* Oculta el color del icono */
+}
+.beneficios-container .box .bxs-truck {
+    background-image: linear-gradient(to right, #ffc852, #dd6502);
+    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    color: transparent; /* Oculta el color del icono */
+}
+.beneficios-container .box .bxs-timer {
+    background-image: linear-gradient(to right, #fff82e, #cca402);
+    -webkit-background-clip: text; /* Esto es para navegadores webkit (Chrome, Safari, etc.) */
+    color: transparent; /* Oculta el color del icono */
 }
 /*.beneficios-container .box .bx:hover, .beneficios-container .bx .bxs-timer{
     background: var(--gradient);
@@ -261,7 +276,7 @@ header{
     /*animation: pulsar 3s infinite;*/
 }
 .populares .populares-container .box{
-    background: var(--bunting-50);
+    background: linear-gradient(var(--bunting-500),var(--bunting-100));
 }
 .populares-container .box .box-img{
     width: 100%;
@@ -320,7 +335,7 @@ header{
     box-shadow: 1px 5px 10px rgb(223, 124, 67);
 }
 .nosotros{
-    background: linear-gradient(var(--bunting-800),var(--bunting-600));
+    background: linear-gradient(var(--bunting-800),var(--bunting-500));
 }
 .nosotros-container{
     /*display: grid;
@@ -415,7 +430,7 @@ header{
 
 /*ofrecemos*/
 .ofrecemos{
-    background: linear-gradient(var(--bunting-600),white);
+    background: linear-gradient(var(--bunting-500),white);
 }
 .ofrecemos-container{
     /*display: grid;
@@ -613,7 +628,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2f2f3085;
+    background: #2f2f3000;
     opacity: 0,5;
     mix-blend-mode: overlay;
 }
@@ -714,7 +729,6 @@ header{
     width: 100%;
     height: 40vh;
 }
-
 
 
 /*MEDIA QUERRYS*/
