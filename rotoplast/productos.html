@@ -67,8 +67,36 @@
                 -->
             </div> 
             <div class="lista-productos">
-                <div class="populares-container">
+                <div class="populares-container" id="populares-container">
+                    
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                </div>
+            </div>
+        </div>
                     <!--Inicio BIODIGESTORES-->
+
                     <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="6">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 600 LTS/2570967512.png" alt="">
