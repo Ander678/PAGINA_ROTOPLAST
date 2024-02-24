@@ -41,55 +41,57 @@ function filtrarPorCategoria(categoria) {
     });
 }
 
-// Obtener elementos del DOM
-var modal = document.getElementById('productModal');
-var btn = document.getElementById("showModalBtn");
-var span = document.getElementsByClassName("close")[0];
-
-// Mostrar modal cuando se hace clic en el botón
-btn.onclick = function() {
+// Función para mostrar el modal del producto correspondiente
+function showModal(modal, item) {
   modal.style.display = "block";
+  cargarDetallesProducto(item);
 }
 
-// Ocultar modal cuando se hace clic en la 'x'
-span.onclick = function() {
+// Función para ocultar el modal del producto correspondiente
+function hideModal(modal) {
   modal.style.display = "none";
 }
 
+// Función para cargar los detalles del producto en el modal
+function cargarDetallesProducto(item) {
+  var imagen = item.querySelector(".box-img img").src;
+  var nombre = item.querySelector("h4").textContent;
+
+  // Puedes añadir más selectores para otras propiedades del producto si es necesario
+
+  document.getElementById("img").src = imagen;
+  document.getElementById("modelo").textContent = nombre;
+
+  // Puedes añadir más líneas para cargar más detalles del producto en el modal
+}
+
+// Obtener elementos del DOM
+var modals = document.querySelectorAll('.modal');
+var btns = document.querySelectorAll(".btn");
+var spans = document.querySelectorAll(".close");
+var products = document.querySelectorAll(".box");
+
+// Agregar manejadores de eventos a cada botón
+btns.forEach((btn, index) => {
+  btn.onclick = function() {
+    showModal(modals[index], products[index]);
+  }
+});
+
+// Agregar manejadores de eventos a cada botón de cierre
+spans.forEach((span, index) => {
+  span.onclick = function() {
+    hideModal(modals[index]);
+  }
+});
+
 // Ocultar modal cuando se hace clic fuera del modal
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  modals.forEach((modal) => {
+    if (event.target == modal) {
+      hideModal(modal);
+    }
+  });
 }
 
-
-/*
-// EL INPUT 
-var elrangolitros = document.querySelector('#rango-litros');
-if (elInput3) {
-  var w = parseInt(window.getComputedStyle(elInput3, null).getPropertyValue('width'));
-
-  // LA ETIQUETA 
-  var etq = document.querySelector('.filtro-filtro');
-  if (etq) {
-    // el valor de la etiqueta (el tooltip) 
-    etq.innerHTML = elrangolitros.value;
-
-    // calcula la posición inicial de la etiqueta (el tooltip); 
-    var pxls = w / 100;
-
-    etq.style.left = ((elrangolitros.value * pxls) - 15) + 'px';
-
-    elrangolitros.addEventListener('input', function() {
-      // cambia el valor de la etiqueta (el tooltip) 
-      etq.innerHTML = elrangolitros.value;
-      // cambia la posición de la etiqueta (el tooltip) 
-      etq.style.left = ((elrangolitros.value * pxls) - 15) + 'px';
-
-    }, false);
-  }
-}
-
-*/
 
