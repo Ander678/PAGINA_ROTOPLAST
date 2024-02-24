@@ -41,6 +41,13 @@
     justify-content: center;
     overflow: hidden;
 }
+.cerrar{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 html::-webkit-scrollbar{
     width: 0.5rem;
 }

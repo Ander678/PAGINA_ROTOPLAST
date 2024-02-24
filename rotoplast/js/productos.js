@@ -39,10 +39,8 @@ function cargar(item) {
 
 function cerrar() {
     mostrador.style.width = "100%";
-    seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
     seleccion.style.width = '0%';
-    seleccion.style.opacity = '0';
 }
 
 // Agregando eventos a los elementos de clase "box"
