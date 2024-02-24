@@ -14,12 +14,59 @@ function filtrarProductos() {
     });
 }
 
+function obtenerCantidadProducto(producto) {
+    return parseInt(producto.getAttribute('data-cantidad'));
+}
+
+
+let mostrador = document.querySelectorAll('.box');
+let seleccion = document.getElementById('seleccion');
+let imgSeleccionada = document.getElementById('img');
+let modeloSeleccionado = document.getElementById('modelo');
+let descripSeleccionada = document.getElementById('descripcion');
+let precioSeleccionado = document.getElementById('precio');
+
+function cargar(item) {
+    seleccion.style.display = 'block'; // Mostrar el contenedor del item seleccionado
+    seleccion.style.width = '100%';
+    seleccion.style.opacity = '1';
+
+    imgSeleccionada.src = item.querySelector('img').src;
+    modeloSeleccionado.textContent = item.querySelector('h4').textContent;
+    descripSeleccionada.textContent = 'Descripción del modelo';
+    precioSeleccionado.textContent = item.dataset.cantidad;
+}
+
+function cerrar() {
+    mostrador.style.width = "100%";
+    seleccion.style.width = "0%";
+    seleccion.style.opacity = "0";
+    seleccion.style.width = '0%';
+    seleccion.style.opacity = '0';
+}
+
+// Agregando eventos a los elementos de clase "box"
+mostrador.forEach(function(item) {
+    item.addEventListener('click', function() {
+        cargar(this);
+    });
+});
+
+// Función para restablecer los botones "COTIZA AHORA!" cuando se filtran todos los productos
+function restablecerBotonesCotiza() {
+    let botonesCotiza = document.querySelectorAll('.box .btn');
+    botonesCotiza.forEach(function(boton) {
+        boton.textContent = 'COTIZA AHORA!';
+        boton.href = 'https://api.whatsapp.com/send?phone=51919473580';
+    });
+}
+
 // JavaScript para filtrar productos por categoría usando un botón
 function filtrarPorCategoria(categoria) {
-    var productos = document.querySelectorAll('.box');
+    let productos = document.querySelectorAll('.box');
 
     productos.forEach(function(producto) {
-        var categoriaProducto = producto.getAttribute('category').toLowerCase();
+        let categoriaProducto = producto.getAttribute('category').toLowerCase();
         if (categoriaProducto === categoria.toLowerCase() || categoria === 'all') {
             producto.style.display = 'block';
         } else {
@@ -27,77 +74,22 @@ function filtrarPorCategoria(categoria) {
         }
     });
 
-      // Restaurar el botón "COTIZA AHORA!"
-      if (categoria === 'all') {
-        var botonesCotiza = document.querySelectorAll('.box .btn');
-        botonesCotiza.forEach(function(boton) {
-            boton.textContent = 'COTIZA AHORA!';
-            boton.setAttribute('href', 'https://api.whatsapp.com/send?phone=51919473580'); // Restaurar el enlace original
-            boton.removeEventListener('click', cargar); // Remover el evento click que se añadió anteriormente
-        });
+    if (categoria === 'all') {
+        restablecerBotonesCotiza();
     } else {
         // Cambiar el botón "COTIZA AHORA!" por "Inspeccionar"
-        var botonesCotiza = document.querySelectorAll('.box .btn');
+        let botonesCotiza = document.querySelectorAll('.box .btn');
         botonesCotiza.forEach(function(boton) {
             boton.textContent = 'Inspeccionar';
-            boton.removeAttribute('href'); // Eliminar el enlace anterior
+            boton.removeAttribute('href');
             boton.addEventListener('click', function() {
-                cargar(boton.closest('.box')); // Llamar a la función cargar() con el elemento del producto
+                cargar(boton.closest('.box'));
             });
         });
     }
 }
 
-function filtrarPorCantidad() {
-    var valorSeleccionado = document.getElementById('rango-litros').value;
-    var productos = document.querySelectorAll('.box');
 
-    productos.forEach(function(producto) {
-        var cantidadProducto = obtenerCantidadProducto(producto); 
-        if (cantidadProducto >= valorSeleccionado) {
-            producto.style.display = 'block';
-        } else {
-            producto.style.display = 'none';
-        }
-    });
-}
-
-function obtenerCantidadProducto(producto) {
-    return parseInt(producto.getAttribute('data-cantidad'));
-}
-
-
-let mostrador = document.getElementsByClassName("box");
-let seleccion = document.getElementById("seleccion");
-let imgSeleccionada = document.getElementById("img");
-let modeloSeleccionado = document.getElementById("modelo");
-let descripSeleccionada = document.getElementById("descripcion");
-let precioSeleccionado = document.getElementById("precio");
-
-function cargar(item){
-    seleccion.style.width = "100%";
-    seleccion.style.opacity = "1";
-
-    imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
-
-    modeloSeleccionado.innerHTML =  item.getElementsByTagName("h4")[0].innerHTML;
-
-    descripSeleccionada.innerHTML = "Descripción del modelo";
-
-    precioSeleccionado.innerHTML =  item.getAttribute("data-cantidad");
-}
-
-function cerrar(){
-    seleccion.style.width = "0%";
-    seleccion.style.opacity = "0";
-}
-
-// Agregando eventos a los elementos de clase "box"
-for(let i = 0; i < mostrador.length; i++) {
-    mostrador[i].addEventListener("click", function() {
-        cargar(this);
-    });
-}
 /*
 // EL INPUT 
 var elrangolitros = document.querySelector('#rango-litros');

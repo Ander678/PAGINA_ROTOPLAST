@@ -29,6 +29,18 @@
     --bunting-900: #0c3f9c;
     --bunting-950: #0a1f4a;
 }
+.seleccion {
+    display: none;
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
 html::-webkit-scrollbar{
     width: 0.5rem;
 }
