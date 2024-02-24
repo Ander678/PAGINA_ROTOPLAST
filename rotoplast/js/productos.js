@@ -26,6 +26,16 @@ function filtrarPorCategoria(categoria) {
             producto.style.display = 'none';
         }
     });
+
+    // Cambiar el botón "COTIZA AHORA!" por "Inspeccionar"
+    var botonesCotiza = document.querySelectorAll('.box .btn');
+    botonesCotiza.forEach(function(boton) {
+        boton.textContent = 'Inspeccionar';
+        boton.removeAttribute('href'); // Eliminar el enlace anterior
+        boton.addEventListener('click', function() {
+            cargar(boton.closest('.box')); // Llamar a la función cargar() con el elemento del producto
+        });
+    });
 }
 
 function filtrarPorCantidad() {
@@ -47,41 +57,36 @@ function obtenerCantidadProducto(producto) {
 }
 
 
-let mostrador = document.getElementById("populares-container");
+let mostrador = document.getElementsByClassName("box");
 let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
 let modeloSeleccionado = document.getElementById("modelo");
 let descripSeleccionada = document.getElementById("descripcion");
-let precioSeleccionado = document.getElementById("capacidad");
+let precioSeleccionado = document.getElementById("precio");
 
 function cargar(item){
-    quitarBordes();
-    mostrador.style.width = "80%";
-    seleccion.style.width = "20%";
+    seleccion.style.width = "100%";
     seleccion.style.opacity = "1";
-    item.style.border = "1px solid red";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
 
-    modeloSeleccionado.innerHTML =  item.getElementsByTagName("p")[0].innerHTML;
+    modeloSeleccionado.innerHTML =  item.getElementsByTagName("h4")[0].innerHTML;
 
-    descripSeleccionada.innerHTML = "Descripción del modelo ";
+    descripSeleccionada.innerHTML = "Descripción del modelo";
 
-    precioSeleccionado.innerHTML =  item.getElementsByTagName("span")[0].innerHTML;
-
-
+    precioSeleccionado.innerHTML =  item.getAttribute("data-cantidad");
 }
+
 function cerrar(){
-    mostrador.style.width = "100%";
     seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
-    quitarBordes();
 }
-function quitarBordes(){
-    var items = document.getElementsByClassName("item");
-    for(i=0;i <items.length; i++){
-        items[i].style.border = "none";
-    }
+
+// Agregando eventos a los elementos de clase "box"
+for(let i = 0; i < mostrador.length; i++) {
+    mostrador[i].addEventListener("click", function() {
+        cargar(this);
+    });
 }
 /*
 // EL INPUT 
@@ -111,3 +116,4 @@ if (elInput3) {
 }
 
 */
+
