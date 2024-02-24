@@ -779,6 +779,9 @@ header{
     header {
         padding: 15px 20px;
     }
+    .logo img{
+        width: 175px;
+    }
 
     .navbar {
         flex-direction: column;
@@ -799,6 +802,9 @@ header{
         width: 100%;
         text-align: center;
     }
+    .navbar a{
+        font-size: 25px;
+    }
 
     .navbar a::after {
         display: none;
@@ -806,6 +812,7 @@ header{
 
     #menu-icon {
         display: block;
+        font-size: 50px;
     }
 
     .home {
@@ -813,16 +820,22 @@ header{
     }
 
     .text h1 {
-        font-size: 3.5rem;
+        font-size: 60px;
     }
-    text p {
-        font-size: 3rem;
+    .text p {
+        font-size: 25px;
     }
-
+    .btn-home a{
+        width: 215px;
+        font-size: 40px;
+    }
     .form-container form {
-        left: 20px;
+        width: 750px;
+        font-size: 35px;
     }
-
+    .form-container form .btnBuscar{
+        font-size: 2rem;
+    }
     .nosotros-container,
     .ofrecemos-container {
         transform: translateX(0);
