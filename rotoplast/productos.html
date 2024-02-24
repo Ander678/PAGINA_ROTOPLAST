@@ -69,24 +69,13 @@
             <div class="lista-productos">
                 <div class="populares-container" id="populares-container">
                     
-    <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
-    <div class="seleccion" id="seleccion">
-        <div class="cerrar" onclick="cerrar()">
-            &#x2715;
-        </div>
-        <div class="info">
-            <img src="" alt="" id="img">
-            <h2 id="modelo"></h2>
-            <p id="descripcion"></p>
-            <span class="precio" id="precio"></span>
-            <div class="fila">
-                <div class="size">
-                    <label for="">SIZE</label>
-                </div>
-                <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
-            </div>
-        </div>
-    </div>
+                    <div id="productModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h2>Detalles del Producto</h2>
+                          <p>Detalles adicionales del producto...</p>
+                        </div>
+                      </div>
                     <!--Inicio BIODIGESTORES-->
 
                     <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="6">
@@ -94,7 +83,7 @@
                             <img src="img/PRODUCTOS DIECAM/BIODIGESTOR/BIODIGESTOR 600 LTS/2570967512.png" alt="">
                         </div>
                         <h4>BIODIGESTOR ROTOPLAS 600 LTS.</h4>
-                        <a href="https://api.whatsapp.com/send?phone=51919473580" target="_blank" class="btn">COTIZA AHORA!</a>
+                        <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
                     <div class="box" data-nombre="BIODIGESTOR" category="Biodigestores" data-cantidad="13">

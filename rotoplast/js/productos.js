@@ -18,38 +18,6 @@ function obtenerCantidadProducto(producto) {
     return parseInt(producto.getAttribute('data-cantidad'));
 }
 
-
-let mostrador = document.querySelectorAll('.box');
-let seleccion = document.getElementById('seleccion');
-let imgSeleccionada = document.getElementById('img');
-let modeloSeleccionado = document.getElementById('modelo');
-let descripSeleccionada = document.getElementById('descripcion');
-let precioSeleccionado = document.getElementById('precio');
-
-function cargar(item) {
-    seleccion.style.display = 'block'; // Mostrar el contenedor del item seleccionado
-    seleccion.style.width = '100%';
-    seleccion.style.opacity = '1';
-
-    imgSeleccionada.src = item.querySelector('img').src;
-    modeloSeleccionado.textContent = item.querySelector('h4').textContent;
-    descripSeleccionada.textContent = 'Descripción del modelo';
-    precioSeleccionado.textContent = item.dataset.cantidad;
-}
-
-function cerrar() {
-    mostrador.style.width = "100%";
-    seleccion.style.opacity = "0";
-    seleccion.style.width = '0%';
-}
-
-// Agregando eventos a los elementos de clase "box"
-mostrador.forEach(function(item) {
-    item.addEventListener('click', function() {
-        cargar(this);
-    });
-});
-
 // Función para restablecer los botones "COTIZA AHORA!" cuando se filtran todos los productos
 function restablecerBotonesCotiza() {
     let botonesCotiza = document.querySelectorAll('.box .btn');
@@ -71,20 +39,28 @@ function filtrarPorCategoria(categoria) {
             producto.style.display = 'none';
         }
     });
+}
 
-    if (categoria === 'all') {
-        restablecerBotonesCotiza();
-    } else {
-        // Cambiar el botón "COTIZA AHORA!" por "Inspeccionar"
-        let botonesCotiza = document.querySelectorAll('.box .btn');
-        botonesCotiza.forEach(function(boton) {
-            boton.textContent = 'Inspeccionar';
-            boton.removeAttribute('href');
-            boton.addEventListener('click', function() {
-                cargar(boton.closest('.box'));
-            });
-        });
-    }
+// Obtener elementos del DOM
+var modal = document.getElementById('productModal');
+var btn = document.getElementById("showModalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+// Mostrar modal cuando se hace clic en el botón
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Ocultar modal cuando se hace clic en la 'x'
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Ocultar modal cuando se hace clic fuera del modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 
