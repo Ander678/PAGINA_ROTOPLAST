@@ -27,15 +27,25 @@ function filtrarPorCategoria(categoria) {
         }
     });
 
-    // Cambiar el botón "COTIZA AHORA!" por "Inspeccionar"
-    var botonesCotiza = document.querySelectorAll('.box .btn');
-    botonesCotiza.forEach(function(boton) {
-        boton.textContent = 'Inspeccionar';
-        boton.removeAttribute('href'); // Eliminar el enlace anterior
-        boton.addEventListener('click', function() {
-            cargar(boton.closest('.box')); // Llamar a la función cargar() con el elemento del producto
+      // Restaurar el botón "COTIZA AHORA!"
+      if (categoria === 'all') {
+        var botonesCotiza = document.querySelectorAll('.box .btn');
+        botonesCotiza.forEach(function(boton) {
+            boton.textContent = 'COTIZA AHORA!';
+            boton.setAttribute('href', 'https://api.whatsapp.com/send?phone=51919473580'); // Restaurar el enlace original
+            boton.removeEventListener('click', cargar); // Remover el evento click que se añadió anteriormente
         });
-    });
+    } else {
+        // Cambiar el botón "COTIZA AHORA!" por "Inspeccionar"
+        var botonesCotiza = document.querySelectorAll('.box .btn');
+        botonesCotiza.forEach(function(boton) {
+            boton.textContent = 'Inspeccionar';
+            boton.removeAttribute('href'); // Eliminar el enlace anterior
+            boton.addEventListener('click', function() {
+                cargar(boton.closest('.box')); // Llamar a la función cargar() con el elemento del producto
+            });
+        });
+    }
 }
 
 function filtrarPorCantidad() {
