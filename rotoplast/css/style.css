@@ -846,14 +846,117 @@ header{
         font-size: 40px;
     }
     .form-container form {
-        width: 750px;
+        width: 800px;
         font-size: 35px;
     }
     .form-container form .btnBuscar{
         font-size: 2rem;
     }
+    .input-box select{
+        font-size: 20px;
+    }
+    .populares-container .box h4{
+        font-size: 20px;
+    }
     .nosotros-container,
     .ofrecemos-container {
         transform: translateX(0);
+    }
+    .populares-container .box .btn{
+        font-size: 25px;
+    }
+    .populares button{
+        font-size: 50px;
+    }
+    .slider-frame{
+        order: 2;
+    }
+    .nosotros-text.show{
+        order: 1;
+    }
+    .nosotros-text span{
+        font-size: 130px;
+        text-align: center;
+    }
+    .nosotros-text p{
+        font-size: 25px;
+        text-align: justify;
+    }
+    .ofrecemos span{
+        font-size: 110px;
+        text-align: center;
+    }
+    .ofrecemos p{
+        font-size: 25px;
+        text-align: justify;
+        width: 300;
+    }
+    .beneficios-container .box{
+        color: var(--color-negro-bajo);
+        font-size: 20px;
+    }
+    .beneficios-container .box h3{
+        font-size: 30px;
+    }
+    /*tiendita*/
+}
+@media only screen and (max-width: 910px) {
+    .form-container form {
+        width: 700px;
+        font-size: 35px;
+    }
+    .form-container form .btnBuscar{
+        font-size: 1.5rem;
+    }
+    .input-box select{
+        font-size: 20px;
+    }
+    .beneficios-container .box{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .text h1 {
+        font-size: 50px;
+    }
+    .text p {
+        font-size: 22px;
+    }
+    .btn-home a{
+        width: 170px;
+        font-size: 30px;
+    }
+
+    .form-container form {
+        width: 600px;
+        font-size: 35px;
+    }
+    .form-container form .btnBuscar{
+        font-size: 1rem;
+    }
+    .input-box select{
+        font-size: 15px;
+    }
+    .beneficios-container .box{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .text p {
+        font-size: 20px;
+        width: 500;
+    }
+
+    .form-container form {
+        width: 500px;
+        font-size: 35px;
+    }
+    .form-container form .btnBuscar{
+        font-size: 1rem;
+    }
+    .input-box select{
+        font-size: 15px;
     }
 }
