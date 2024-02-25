@@ -33,7 +33,7 @@
     .modal {
         display: none; /* Ocultar modal por defecto */
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
         left: 0;
         top: 0;
         width: 100%;
@@ -63,6 +63,7 @@
         text-decoration: none;
         cursor: pointer;
     }
+
 html::-webkit-scrollbar{
     width: 0.5rem;
 }
