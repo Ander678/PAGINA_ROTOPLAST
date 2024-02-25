@@ -37,9 +37,10 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        max-height: 100vh;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.5);
+        
     }
     
     .modal-content {
@@ -48,6 +49,50 @@
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
+        border-radius: 10px;
+    }
+    .imagenes-model{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .modal .img-modal{
+        width: 30%;
+        /*border: solid var(--bunting-900);*/
+    }
+    .modal .ficha-tecnica{
+        width: 70%;
+    }
+    .modal-content #descripcion{
+        margin: 20px 0;
+    }
+    .btn-cotizar{
+        background-color: red;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 50px;
+        animation-name: wobble;
+        animation-duration: 0.5s;
+    }
+    @keyframes wobble {
+        0% {
+            transform: translateZ(0deg);
+        }
+        15% {
+            transform: translateZ(-15deg);
+        }
+        30% {
+            transform: translateZ(10deg);
+        }
+        45% {
+            transform: translateZ(-10deg);
+        }
+        60% {
+            transform: translateZ(5deg);
+        }
+        100% {
+            transform: translateZ(0deg);
+        }
     }
     
     .close {
@@ -155,7 +200,7 @@ header{
 }
 .home{
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     position: relative;
     background-image: url(../img/fondoroto.jpg);
     background-repeat: no-repeat;
@@ -272,9 +317,13 @@ header{
     color: var(--text-color);
 }
 .beneficios-container .box h3{
+    color: var(--bunting-950);
     font-size: 1.3rem;
     font-weight: 500;
     margin: 1.4rem 0 0.5rem;
+}
+.beneficios-container .box p{
+    color: var(--bunting-950);
 }
 .beneficios-container .box .bxs-paper-plane {
     background-image: linear-gradient(to right, #80FF52, #26B100);
@@ -311,13 +360,13 @@ header{
 }
 .populares-container .box{
     padding: 10px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
     
     /*animation: pulsar 3s infinite;*/
 }
 .populares .populares-container .box{
-    background: linear-gradient(var(--bunting-100),var(--bunting-400));
+    background: linear-gradient(var(--bunting-100),var(--bunting-200));
 }
 .populares-container .box .box-img{
     width: 100%;
@@ -346,14 +395,15 @@ header{
 .populares-container .box .btn{
     display: flex;
     justify-content: center;
-    background:var(--text-color);
+    background:var(--color-primario);
     color: #fff;
     padding: 10px;
     border-radius: 0.5rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 .populares-container .box .btn:hover{
-    background: var(--color-primario);
+    background: var(--text-color);
 }
 .populares{
     text-align: center;
@@ -678,7 +728,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background: linear-gradient(var(--bunting-400),var(--bunting-950));
+    background: linear-gradient(var(--bunting-400),var(--bunting-900));
 }
 .filtro-busqueda{
     width: 100%;
