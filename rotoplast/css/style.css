@@ -200,7 +200,7 @@ header{
 }
 .home{
     width: 100%;
-    min-height: 70vh;
+    min-height: 75vh;
     position: relative;
     background-image: url(../img/fondoroto.jpg);
     background-repeat: no-repeat;
@@ -728,7 +728,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background: linear-gradient(var(--bunting-400),var(--bunting-900));
+    background: #e5e7e9;
 }
 .filtro-busqueda{
     width: 100%;
