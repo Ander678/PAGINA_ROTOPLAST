@@ -395,7 +395,7 @@ header{
 .populares-container .box .btn{
     display: flex;
     justify-content: center;
-    background:var(--color-primario);
+    background:var(--bunting-700);
     color: #fff;
     padding: 10px;
     border-radius: 0.5rem;
@@ -597,7 +597,7 @@ header{
     justify-content:space-around;
     height: 100%;
     width: 100%;
-    background: var(--text-color);
+    background: var(--bunting-900);
 }
 
 #footer h4{
@@ -640,7 +640,7 @@ header{
 
 .group-2{
     width: 100%;
-    background: var(--gradient);
+    background: linear-gradient(var(--bunting-900),var(--bunting-950));
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -691,7 +691,7 @@ header{
 }
   .promo button{
     display: inline-block;
-    background-color: var(--color-texto-secundario);
+    background-color: var(--bunting-900);
     border: none;
     height: 60px;
     border-radius: 30px;
@@ -733,28 +733,7 @@ header{
 .filtro-busqueda{
     width: 100%;
 }
-.buscador{
-    margin-bottom: 2px 0;
-    display: flex;
-    flex-direction: row;
-    margin: 0 10px;
-}
-.buscador h3 {
-    margin: 8px;
-}
-.buscador input{
-    width: 85%;
-    height: 2.5rem;
-    border-radius: 10px;
-}
-.buscador button{
-    width: 3rem;
-    border: none;
-    background-color: var(--text-color);
-    color: var(--bf-color);
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .filtro-categoria{
     margin-bottom: 20px;
     display: flex;
@@ -766,7 +745,7 @@ header{
     min-height: 2.8rem;
     margin: 0 10px;
     padding: 10px;
-    background: var(--text-color);
+    background: var(--bunting-900);
     color: var(--bf-color);
     border: none;
     border-radius: 10px;
@@ -775,7 +754,7 @@ header{
     
 }
 .filtro-categoria button:hover{
-    background-color: var(--color-primario);
+    background-color: var(--bunting-600);
     color: white;
     transition: 0.3s ease;
 }
