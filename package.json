@@ -1,0 +1,15 @@
+{
+  "name": "pagina_rotoplast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rotoplast/index.js",
+  "scripts": {
+    "dev":"node rotoplast/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "buendiacordovarichard@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
