@@ -135,7 +135,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #eeeff1;
+    background: var(--bunting-950);
     padding: 15px 100px;
 }
 .logo img{
@@ -148,16 +148,16 @@ header{
     position: relative;
 }
 .navbar a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
-    color: var(--color-negro-bajo);
+    color: var(--bunting-100);
     font-weight: 500;
 }
 .navbar a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: var(--gradient);
+    background: var(--bunting-100);
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -171,14 +171,14 @@ header{
     display: none;
     width: 122px;
     height: auto;
-    background: #eeeff1;
+    background: var(--bunting-950);
     /*box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 8px 8px;*/
 }
 .menu-vertical a{
     font-size: 0.8rem;
     padding: 10px 5px;
-    color: var(--color-negro-bajo);
+    color: var(--bunting-100);
     font-weight: 500;
     
 }
@@ -193,6 +193,7 @@ header{
     cursor: pointer;
     z-index: 10001;
     display: none;
+    color: var(--bunting-100);
 }
 .header-btn a{
     padding: 10px 20px;
@@ -346,15 +347,7 @@ header{
     background: var(--gradient);
     color:#fff;
 }*/
-.populares{
-position: relative; 
---mask: 
-linear-gradient(to bottom,#0000 30px,#000 0),
-radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
--webkit-mask: var(--mask);
-      mask: var(--mask);
-    top: -18px;
-}
+
 .populares span{
     color: var(--bunting-100);
     
@@ -383,13 +376,17 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
     }
     50% {
       transform: scale(1);
-      box-shadow: 1px 4px 41px var(--bunting-300);
+      box-shadow: 1px 4px 11px var(--bunting-300);
     }
     100% {
       transform: scale(0.98);
     }
   }
-  
+
+  .populares .populares-container{
+    gap: 5rem;
+  }
+
 .populares .populares-container .box{
     background: linear-gradient(var(--bunting-100),var(--bunting-200));
     animation: pulsar 3s infinite ;
@@ -435,6 +432,7 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
 .populares{
     text-align: center;
     background: linear-gradient(var(--bunting-950),var(--bunting-900));
+    padding-top: 20px;
 }
 .populares button{
     width: 150px;
@@ -494,8 +492,6 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
     padding-top: 8%;
     height: 100vh;
     background: linear-gradient(var(--bunting-900),var(--bunting-500));
-    position: relative;
-    top: -18px;
 }
 .nosotros-container{
     /*display: grid;
@@ -557,7 +553,7 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
 	display: flex;
 	padding: 0;
 	width: 400%;
-	animation: slide 7s infinite alternate ease-in-out;
+	animation: slide 6s infinite alternate ease-in-out;
     align-items: center;
 }
 
@@ -570,13 +566,8 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
 .slider-frame img {
 	width: 70vh;
     height: 50vh;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 10px 10px 53px -30px var(--bunting-100);
-    --mask:
-    radial-gradient(15px at 0 75%,#0000 98%,#000) 15px 50%/100% 60px repeat-y,
-    radial-gradient(15px at 50% 25%,#000 99%,#0000 101%) left/30px 60px repeat-y;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
     
 }
 
@@ -599,8 +590,6 @@ radial-gradient(30px,#000 98%,#0000) top/55.5px 60px;
 .ofrecemos{
     background: linear-gradient(var(--bunting-500),white);
     height: 80vh;
-    position: relative;
-    top: -18px;
 }
 .ofrecemos-container{
     /*display: grid;
@@ -786,7 +775,7 @@ border-bottom-left-radius: 520px;
 }
   .promo button{
     display: inline-block;
-    background-color: var(--bunting-900);
+    background-color: var(--bunting-950);
     border: none;
     height: 60px;
     border-radius: 30px;
@@ -815,7 +804,7 @@ border-bottom-left-radius: 520px;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    background: var(--bunting-900);
+    background: var(--bunting-950);
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     cursor: pointer;
@@ -889,24 +878,25 @@ border-bottom-left-radius: 520px;
     background: #e5e7e9;
 }
 .filtro-busqueda{
-    width: 100%;
+    text-align: center;
 }
-
 .filtro-categoria{
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(5,2fr);
+    margin: auto;
+    justify-content: center;
 }
 .filtro-categoria button{
-    width: 100%;
-    min-height: 2.8rem;
-    margin: 0 10px;
-    padding: 10px;
-    background: var(--bunting-900);
+    width: auto;
+    height: auto;
+    margin: 8px;
+    padding: 10px 0;
+    background: var(--bunting-950);
     color: var(--bf-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     
@@ -957,7 +947,7 @@ border-bottom-left-radius: 520px;
     object-position: center;
 }
 .filtro-categoria .mostrar-todos{
-    background-color: rgb(9, 163, 9);
+    background-color: var(--bunting-600);
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
@@ -983,17 +973,18 @@ border-bottom-left-radius: 520px;
         padding: 15px 20px;
     }
     .logo img{
-        width: 175px;
+        width: 150px;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 70px;
+        top: 100px;
         left: 0;
         right: 0;
-        background: #eeeff1;
+        height: auto;
+        background: var(--bunting-950);
         display: none;
     }
 
@@ -1003,6 +994,7 @@ border-bottom-left-radius: 520px;
 
     .navbar li {
         width: 100%;
+        margin:1.5rem 0rem;
         text-align: center;
     }
     .navbar a{

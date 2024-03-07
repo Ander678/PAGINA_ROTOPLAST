@@ -51,26 +51,19 @@
                     <input type="text" id="filtro" oninput="filtrarProductos()">
                 </div>
             -->
+            <h2>Elije una categoría</h2>
                 <div class="filtro-categoria">
-                    
-                    <button onclick="filtrarPorCategoria('all')" class="mostrar-todos">Mostrar Todos</button>
-                    <button onclick="filtrarPorCategoria('Tanques y accesorios domésticos')">Tanques y accesorios domésticos</button>
-                    <button onclick="filtrarPorCategoria('Biodigestores')">Biodigestores</button>
-                    <button onclick="filtrarPorCategoria('Cisternas')">Cisternas y bombas</button>
-                    <button onclick="filtrarPorCategoria('Tanques y accesorios industriales')">Tanques y accesorios industriales</button>
-                    <button onclick="filtrarPorCategoria('Tanques Vitivinicolas')">Tanques Vitivinicolas</button>
-                    <button onclick="filtrarPorCategoria('Tuberias Tuboplus')">Tuberias Tuboplus</button>
-                    <button onclick="filtrarPorCategoria('Tolvas y nodrizas')">Tolvas y nodrizas</button>
-                    <button onclick="filtrarPorCategoria('Filtros, cartuchos y pruificadores domésticos')">Filtros, cartuchos y purificadores domésticos</button>
-                    <button onclick="filtrarPorCategoria('Termas')">Termas y accesorios</button>
+                  <button onclick="filtrarPorCategoria('Tanques y accesorios domésticos')">Tanques y accesorios domésticos</button>
+                  <button onclick="filtrarPorCategoria('Biodigestores')">Biodigestores</button>
+                  <button onclick="filtrarPorCategoria('Cisternas')">Cisternas y bombas</button>
+                  <button onclick="filtrarPorCategoria('Tanques y accesorios industriales')">Tanques y accesorios industriales</button>
+                  <button onclick="filtrarPorCategoria('Tanques Vitivinicolas')">Tanques Vitivinicolas</button>
+                  <button onclick="filtrarPorCategoria('Tuberias Tuboplus')">Tuberias Tuboplus</button>
+                  <button onclick="filtrarPorCategoria('Tolvas y nodrizas')">Tolvas y nodrizas</button>
+                  <button onclick="filtrarPorCategoria('Filtros, cartuchos y pruificadores domésticos')">Filtros, cartuchos y purificadores</button>
+                  <button onclick="filtrarPorCategoria('Termas')">Termas y accesorios</button>
+                  <button onclick="filtrarPorCategoria('all')" class="mostrar-todos">Mostrar Todos</button>
                 </div>
-                <!-- 
-                <div class="filtro-litro">
-                    <h3>Litros</h3>
-                    <input type="range" min="0" max="100" value="50" class="barra-deslizante" id="rango-litros">
-                    <button onclick="filtrarPorCantidad()">Aplicar</button>
-                </div>
-                -->
             </div> 
             <div class="lista-productos">
                 <div class="populares-container" id="populares-container">
@@ -1315,7 +1308,7 @@
                     </div>
                     ----------------------------------------->
 
-
+<!--
                     
                     <div id="10" class="box" data-nombre="CISTERNA" category="Cisternas" data-cantidad="100">
                         <div class="box-img">
@@ -1324,11 +1317,11 @@
                         <h4>CISTERNA ROTOPLAS 10,000 LTS</h4>
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
-                    <!--Fin CISTERNAS-->
+                    Fin CISTERNAS-->
 
                     
                     <!--Inicio BOMBAS PARA TANQUES-->
-                    <div id="11" class="box" data-nombre="BOMBA" category="Cisternas" data-cantidad="1">
+                    <!-- <div id="11" class="box" data-nombre="BOMBA" category="Cisternas" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/BOMBAS PARA TANQUES/BOMBA CENTRIFUGA DE 1 HP/2589063502.png" alt="">
                       </div>
@@ -1337,7 +1330,7 @@
                   </div>
 
                   <div id="12" class="box" data-nombre="BOMBA" category="Cisternas" data-cantidad="0">
-                      <div class="box-img">
+                      <div class="box-img"> 
                           <img src="img/PRODUCTOS DIECAM/BOMBAS PARA TANQUES/BOMBA CENTRIFUGA DE 12 HP/2589061506.png" alt="">
                       </div>
                       <h4>BOMBA CENTRIFUGA DE 1/2 HP</h4>
@@ -1350,11 +1343,10 @@
                       </div>
                       <h4>BOMBA PERIFERICA DE 1/2 HP</h4>
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
-                  </div>
-                  <!--Fin BOMBAS PARA TANQUES-->
+                  </div>-->
                     
                     <!--Inicio TANQUES Y ACCESORIOS DOMESTICOS-->
-                    <div id="14" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="6">
+                    <!--<div id="14" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="6">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 600 LTS. ARENA/TANQUE_DE_AGUA_GARANTIA_DE_POR_VIDA_600_LITROS-02.jpg" alt="">
                         </div>
@@ -1369,7 +1361,7 @@
                         <h4>MEJOR AGUA GARANTIA DE POR VIDA 750 LTS. ARENA</h4>
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
-                    
+                                  
                     <div id="16" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="11">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA GARANTIA DE POR VIDA 1100 LTS. ARENA/2648612598.jpg" alt="">
@@ -1384,7 +1376,7 @@
                         </div>
                         <h4>MEJOR AGUA GARANTIA DE POR VIDA 1,500 LTS. ARENA</h4>
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
-                    </div>
+                    </div> -->
 
                     <div id="18" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="25">
                         <div class="box-img">
@@ -1394,7 +1386,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="11">
+                    <div id="19" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="11">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA 1100 LTS. NEGRO/TANQUE_N1100L-1.png" alt="">
                         </div>
@@ -1402,7 +1394,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="25">
+                    <div id="20" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="25">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MEJOR AGUA 2500 LTS. NEGRO/2570940150.png" alt="">
                         </div>
@@ -1410,7 +1402,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="2">
+                    <div id="21" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="2">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/TANQUE MEJOR AGUA 250LTS. CON VALVULA Y FLOT/2648643845.png" alt="">
                         </div>
@@ -1418,7 +1410,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                    <div id="22" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/COMBO VALVULA DE PIE + 2 ELECTRONIVELES/2648599919.jpg" alt="">
                         </div>
@@ -1426,7 +1418,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                    <div id="23" class="box" data-nombre="TANQUE Y ACCESORIOS" category="Tanques y accesorios domésticos" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/MULTICONECTOR C VALVULA/2648574990.jpg" alt="">
                         </div>
@@ -1434,7 +1426,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUE Y ACCESORIOS DOMESTICOS" category="Tanques y accesorios domésticos" data-cantidad="1">
+                    <div id="24" class="box" data-nombre="TANQUE Y ACCESORIOS DOMESTICOS" category="Tanques y accesorios domésticos" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS DOMESTICOS/TAPA CLICK 18 NEGRA/2648639778.jpg" alt="">
                         </div>
@@ -1444,7 +1436,7 @@
                     <!--Fin TANQUES Y ACCESORIOS DOMESTICOS-->
 
                     <!--Incio TANQUES Y ACCESORIOS INDUSTRIALES-->
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="25" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="" alt="">
                         </div>
@@ -1452,7 +1444,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="26" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="" alt="">
                         </div>
@@ -1460,7 +1452,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="27" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="" alt="">
                         </div>
@@ -1468,7 +1460,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="28" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="" alt="">
                         </div>
@@ -1476,7 +1468,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="29" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/TANQUE 5000 L.png" alt="">
                         </div>
@@ -1484,7 +1476,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="30" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/TANQUE 10000 L.png" alt="">
                         </div>
@@ -1492,7 +1484,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                    <div id="31" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/TANQUE 25000 L.png" alt="">
                       </div>
@@ -1500,7 +1492,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                  <div id="32" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/CONEXION HEXAGONAL.jpg" alt="">
                       </div>
@@ -1508,7 +1500,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                  <div id="33" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/NIPLE CORTO PROPILENO.webp" alt="">
                       </div>
@@ -1516,7 +1508,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                  <div id="34" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/VALCULA FULL PORT BANJO.webp" alt="">
                       </div>
@@ -1524,7 +1516,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                  <div id="35" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/TUBO DE AIRE.jpg" alt="">
                       </div>
@@ -1532,7 +1524,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
+                  <div id="36" class="box" data-nombre="TANQUES Y ACCESORIOS INDUSTRIALES" category="Tanques y accesorios industriales" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES Y ACCESORIOS INDUSTRIALES/VALVULA Y FLOTADOR.webp" alt="">
                       </div>
@@ -1544,7 +1536,7 @@
 
                     <!--Inicio TANQUES VITIVINICOLAS-->
 
-                    <div class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
+                    <div id="37" class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/TANQUES VITIVINICOLAS/wine/tanque2,5kvinos.png" alt="">
                       </div>
@@ -1552,7 +1544,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
+                    <div id="38" class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
                     <div class="box-img">
                         <img src="img/PRODUCTOS DIECAM/TANQUES VITIVINICOLAS/wine/tanque15kvinos.png" alt="">
                     </div>
@@ -1560,7 +1552,7 @@
                     <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                 <div class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
+                 <div id="39" class="box" data-nombre="TANQUES VITIVINICOLAS" category="Tanques Vitivinicolas" data-cantidad="1">
                   <div class="box-img">
                       <img src="img/PRODUCTOS DIECAM/TANQUES VITIVINICOLAS/wine/tanque250lvinos.jpg" alt="">
                   </div>
@@ -1572,7 +1564,7 @@
                     <!--Fin TANQUES VITIVINICOLAS-->
 
                     <!--Incio FILTRO CARTUCHOS Y PURIFICADORES CAJA-->
-                    <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                    <div id="40" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO JUMBO/2661962997.jpg" alt="">
                       </div>
@@ -1580,7 +1572,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="41" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO PARA PURIFICADOR ROTOPLAS/2661984429.jpg" alt="">
                       </div>
@@ -1588,7 +1580,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="42" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/CARTUCHO PASO 1 PARA FILTRO DE TANQUE/2662050518.jpg" alt="">
                       </div>
@@ -1596,7 +1588,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="43" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/FILTROPLAS JUMBO/2648631670.jpg" alt="">
                       </div>
@@ -1604,7 +1596,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="44" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/FILTROPLAS PASO 1 PARA TANQUE/2648648650.jpg" alt="">
                       </div>
@@ -1612,7 +1604,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="45" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/PURIFICADOR DE AGUA BAJO LAVADERO/2661961748.png" alt="">
                       </div>
@@ -1620,7 +1612,7 @@
                       <a id="showModalBtn" class="btn">Ver Detalles</a>
                   </div>
 
-                  <div class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
+                  <div id="46" class="box" data-nombre="FILTRO CARTUCHO Y PURIFICADOR" category="Filtros, cartuchos y pruificadores domésticos" data-cantidad="1">
                       <div class="box-img">
                           <img src="img/PRODUCTOS DIECAM/FILTRO CARTUCHOS Y PURIFICADORES/PURIFICADOR DE AGUA SOBRE LAVADERO/2648632304.png" alt="">
                       </div>
@@ -1630,7 +1622,7 @@
                   <!--Fin FILTRO CARTUCHOS Y PURIFICADORES-->
 
                     <!--Inicio TERNAS-->
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="47" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/BRAZO DE DUCHA/2589032254.jpg" alt="">
                         </div>
@@ -1638,7 +1630,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="48" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/DUCHA ELECTRICA 4T 220V BLANCA/2589011816.png" alt="">
                         </div>
@@ -1646,7 +1638,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="49" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/DURATERMA DE 50 LTS/500466-1.png" alt="">
                         </div>
@@ -1654,7 +1646,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="50" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/DURATERMA DE 80 LTS/500467-1.png" alt="">
                         </div>
@@ -1662,7 +1654,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="51" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 6 LTS/1.1.png" alt="">
                         </div>
@@ -1670,7 +1662,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="52" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 10 LTS/1.1 (1).png" alt="">
                         </div>
@@ -1678,7 +1670,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="53" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS GLP FLAMING 14 LTS/1.1.png" alt="">
                         </div>
@@ -1686,7 +1678,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="54" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 5.5 LTS/17899062_1.png" alt="">
                         </div>
@@ -1694,7 +1686,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="55" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 6 LTS/1.1.png" alt="">
                         </div>
@@ -1702,7 +1694,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="56" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 10 LTS/gas_10L.png" alt="">
                         </div>
@@ -1710,7 +1702,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="57" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA A GAS NATURAL FLAMING 14 LTS/2589026533.png" alt="">
                         </div>
@@ -1718,7 +1710,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="58" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA PRISMA/3100256468.png" alt="">
                         </div>
@@ -1726,7 +1718,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="59" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SENSATION/2846040133.jpg" alt="">
                         </div>
@@ -1734,7 +1726,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="60" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SENSE PRO/2588936746.png" alt="">
                         </div>
@@ -1742,7 +1734,7 @@
                         <a id="showModalBtn" class="btn">Ver Detalles</a>
                     </div>
 
-                    <div class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
+                    <div id="61" class="box" data-nombre="TERNA" category="Termas" data-cantidad="1">
                         <div class="box-img">
                             <img src="img/PRODUCTOS DIECAM/TERNAS/TERMA INSTANTANEA SILVER/2589032259.png" alt="">
                         </div>

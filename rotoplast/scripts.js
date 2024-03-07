@@ -5,7 +5,7 @@ function displayProducts(productList){
     productList.forEach(element => {
         productsHTML +=
         `
-        <div id="${element.id}" class="box" data-nombre="BIODIGESTOR" category="${element.category}" data-cantidad="6">
+        <div id="${element.id}" class="box" data-nombre="${element.dataNombre}" category="${element.category}" data-cantidad="${element.dataCantidad}">
             <div class="box-img">
                 <img src="${element.image}" alt="">
             </div>
