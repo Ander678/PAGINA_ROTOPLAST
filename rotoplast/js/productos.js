@@ -93,5 +93,3 @@ window.onclick = function(event) {
     }
   });
 }
-
-

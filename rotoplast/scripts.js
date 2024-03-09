@@ -1,3 +1,4 @@
+import('/products.js')
 
 
 function displayProducts(productList){
